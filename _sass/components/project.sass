@@ -9,17 +9,16 @@
     
 
     > .link >.item > .selfie
-        border: 1px groove grey
-        width: 150px
-        height: 150px
-        margin-bottom: 25px
-        border-radius: 100%
-        transition: all .2s
-        box-shadow: 1px 1px 10px grey
+        border: 3px solid $beta  // Accent color
+        border-radius: 15px // Slight rounding
+        padding: 5px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        transition: transform 0.3s, box-shadow 0.3s
 
         &:hover
-            opacity: .5
-            box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15)
+            transform: scale(1.05)
+            border: 3px solid $gama
+            box-shadow: 0 0 5px $gama, 0 0 15px $gama
 
     > .link > .title
         font-weight: 100

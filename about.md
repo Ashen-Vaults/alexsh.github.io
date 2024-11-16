@@ -10,7 +10,6 @@ Throughout my career, I’ve had the opportunity to collaborate closely with art
 
 I’ve excelled in both in-person and remote settings, and I find that remote work, in particular, allows me to focus deeply on my tasks and deliver high-quality results. Looking forward, I’m excited to continue creating engaging experiences, driving innovation, and tackling new challenges in game development.
 
-
 ## Skills
 
 - **Languages**: C#, C, C++, Python, Groovy, HLSL, SQL
@@ -18,7 +17,6 @@ I’ve excelled in both in-person and remote settings, and I find that remote wo
 - **Tools**: Visual Studio, RenderDoc, SDL2, Perforce, Plastic SCM, Git, Jenkins, Jira, ClickUp, FMOD, Linux, Discord
 - **Platforms**: PS4, PS5, Xbox One, Xbox Series X, Nintendo Switch, Windows, Steamdeck, iOS, Android
 
-<br>
 ## Education
 
 - **Bachelors in Computer Science**
@@ -39,7 +37,7 @@ Outside of programming, I enjoy:
 - Coffee
 - Philadlephia History
 - Urban Exploration -->
----
+----
 ## Favorites
 
 - **Games**: Diablo 2: LOD, TES: Oblivion, Alan Wake 2, Tony Hawk's Pro Skater 1-4, Session: Skate Sim, Myst, Portal, Golden Eye 007, Control, Demon Souls
