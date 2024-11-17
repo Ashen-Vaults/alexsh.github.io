@@ -13,6 +13,12 @@ ul, li
 li
     margin-bottom: 5px
 
+hr
+    border: none
+    height: 1px
+    background-color: rgba($gama, 1.0)
+    margin: 15px 0
+
 .about
     img
         margin: 0 auto
@@ -26,20 +32,27 @@ li
 
 table
     width: 100%
-        border-collapse: collapse
-        text-align: left
+    border-collapse: collapse
+    border-spacing: 0
+    text-align: left
+    margin-bottom: 10px 
 
     th, td
-        padding: 3px
+        padding: 5px
+        border: none
         color: $alpha
 
+    tr:first-child
+        th
+            border-bottom: 1px outset rgba($alpha, 0.1)
     th
         font-weight: italic
         text-align: left
         color: $beta
-        border-bottom: 2px solid $beta
+
     td:first-child
         color: $alpha
+        font-weight: italic
         a
             text-decoration: none
             color: $delta
@@ -52,14 +65,12 @@ table
         font-style: italic
 
     td:has(a)
-        color: $delta // Base color for links
+        color: $delta
         a
-            color: inherit // Ensure links inherit the $delta color from the cell
-            transition: color 0.3s // Smooth transition for hover effect
-
-            &:hover, &:focus // Change color on hover or focus
+            color: inherit
+            transition: color 0.3s
+            &:hover, &:focus
                 color: $gama
-
-            &:active // Change color on click (active state)
+            &:active
                 color: $gama
 
