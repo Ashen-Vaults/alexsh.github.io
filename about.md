@@ -6,7 +6,7 @@ layout: page
 
 I’m **Alex**, a passionate software engineer at **PHL Collective** with over 6 years of experience in the video game industry, specializing in cross-platform development, build pipeline automation, and performance optimization. I’ve worn many hats and quickly pick up new technologies—whether it’s graphics rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, and Gnm, automating build pipelines with Groovy and Python, or implementing core game mechanics. When faced with a challenge, I don’t just find solutions—I make them work.
 
-Throughout my career, I’ve had the opportunity to collaborate closely with artists, designers, producers, writers, audio engineers, and fellow programmers to successfully ship 9 titles across multiple platforms. Each project presented its own unique challenges—some straightforward, others complex—and through teamwork and dedication, we achieved successful launches every time. Looking forward, I’m excited to continue creating engaging experiences, driving innovation, and tackling new challenges in game development.
+Throughout my career, I’ve had the opportunity to collaborate closely with artists, designers, producers, writers, audio engineers, and fellow programmers to successfully ship 9 titles across multiple platforms. Each project presented its own unique challenges—some straightforward, others complex—and through teamwork and dedication, we achieved successful launches every time. Looking forward, I’m excited to continue creating engaging experiences and tackling new challenges.
 
 ---
 # Professional Projects
