@@ -16,9 +16,13 @@ $nav-padding: 1px 0
     
 
     @media #{$mobile}
-        flex-direction: column
-        padding: 10px 0
-        overflow-y: auto
+        > .list
+            font-size: 0.9rem
+
+            > .item > .link
+                font-size: 1.8rem
+                padding: 15px 8px
+
 
     > .list
         list-style: none
@@ -28,15 +32,12 @@ $nav-padding: 1px 0
         justify-content: center
 
         @media #{$mobile}
-            padding: 8px 0
-            font-size: 1.1rem
+                padding: 8px 0
+                font-size: 1.1rem
 
         > .item
             display: inline-block
             margin-right: $nav-spacing
-
-            @media #{mobile}
-                margin-right: 0
 
         > .item > .link
             display: inline-block
