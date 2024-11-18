@@ -14,20 +14,20 @@ Throughout my career, I’ve had the opportunity to collaborate closely with art
 |PS4, PS5, Xbox One, Xbox Series X, Switch, and PC: | |
 |------------|------------|
 | Port of Dreamcast/PS1 Game (Announcement coming Q1 2025)               | Director of Programming |
-| SpongeBob SquarePants™: The Patrick Star Game                          | Lead Platform Programmer |
-| DC's Justice League: Cosmic Chaos                                      | Lead Platform Programmer |
-| DC League of Super-Pets: The Adventures of Krypto and Ace              | Lead Platform Programmer |
-| The Addams Family: Mansion Mayhem                                      | Lead Platform Programmer |  
-| Ben 10: Power Trip                                                     | Platform Programmer |  
+| [SpongeBob SquarePants™: The Patrick Star Game](https://www.phlcollective.com/games/the-patrick-star-game)        | Lead Platform Programmer |
+| [DC's Justice League: Cosmic Chaos](https://www.phlcollective.com/games/justice-league)                           | Lead Platform Programmer |
+| [DC League of Super-Pets: The Adventures of Krypto and Ace](https://www.phlcollective.com/games/super-pets)       | Lead Platform Programmer |
+| [The Addams Family: Mansion Mayhem](https://www.phlcollective.com/games/the-addams-family-mansion-mayhem)         | Lead Platform Programmer |  
+| [Ben 10: Power Trip](https://www.phlcollective.com/games/ben-10-power-trip)                                       | Platform Programmer |  
 
 |iOS, Android, and PC: | |
 |------------|------------|
-| FGTeeV Presents Goozy               | Lead Platform Programmer |
+| [FGTeeV Presents Goozy](https://www.phlcollective.com/games/goozy)                                               | Lead Platform Programmer |
 
 |HTC Vive and Oculus Rift:| |
 |------------|------------|
-| Ben 10: Omni-Charged                         | Gameplay Programmer |
-| We Bare Bears: Food Truck Rush               | Additional Programming |
+| [Ben 10: Omni-Charged](https://www.phlcollective.com/games/ben-10-omnicharged)                                   | Gameplay Programmer |
+| [We Bare Bears: Food Truck Rush](https://www.phlcollective.com/games/we-bare-bears-food-truck-rush)              | Additional Programming |
 
 # Personal Projects
 
