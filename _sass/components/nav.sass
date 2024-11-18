@@ -18,6 +18,7 @@ $nav-padding: 1px 0
     @media #{$mobile}
         flex-direction: column
         padding: 10px 0
+        overflow-y: auto
 
     > .list
         list-style: none
@@ -27,12 +28,16 @@ $nav-padding: 1px 0
         justify-content: center
 
         @media #{$mobile}
-                padding: 8px 0
-                font-size: 1.1rem
+            flex-direction: column
+            padding: 8px 0
+            font-size: 1.1rem
 
         > .item
             display: inline-block
             margin-right: $nav-spacing
+
+            @media #{mobile}
+                margin-right: 0
 
         > .item > .link
             display: inline-block
