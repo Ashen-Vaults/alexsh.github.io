@@ -3,6 +3,7 @@ $nav-color: $delta
 $nav-hover-color: $gama
 $nav-spacing: 2px
 $nav-padding: 1px 0
+
 .nav
     position: fixed
     top: 0
@@ -13,23 +14,23 @@ $nav-padding: 1px 0
     padding: $nav-padding
     z-index: 1000 // Ensures the navigation stays on top of other content
     background-color: $background-color
-    
 
     @media #{$mobile}
         > .list
             display: grid
             grid-template-columns: repeat(2, 1fr)
             gap: 10px
-            justify-items: center
-    
-            > .item
-                margin-right: 0
-    
-            > .item > .link
-                font-size: 1.8rem
-                padding: 15px 8px
-    
+            justify-content: center
+            align-items: center
+            padding: 8px 0
 
+        > .item
+            margin: 0
+
+        > .item > .link
+            font-size: 1.8rem
+            padding: 15px 8px
+            text-align: center
 
     > .list
         list-style: none
