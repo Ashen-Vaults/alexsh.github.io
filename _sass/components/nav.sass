@@ -17,11 +17,18 @@ $nav-padding: 1px 0
 
     @media #{$mobile}
         > .list
-            font-size: 0.9rem
-
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 10px
+            justify-items: center
+    
+            > .item
+                margin-right: 0
+    
             > .item > .link
                 font-size: 1.8rem
                 padding: 15px 8px
+    
 
 
     > .list
