@@ -45,6 +45,9 @@ layout: compress
 
     {% include analytics-google.html %}
 
+    <button id="backToTop" class="back-to-top">↑</button>
+
+
 </body>
 
 <script>
@@ -54,6 +57,29 @@ layout: compress
             link.setAttribute('rel', 'noopener noreferrer');
         }
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const backToTopButton = document.getElementById('backToTop');
+        const navBar = document.querySelector('.nav');
+    
+        const toggleBackToTop = () => {
+            const navBottom = navBar.getBoundingClientRect().bottom;
+            if (navBottom < 0) {
+                backToTopButton.classList.add('visible');
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+                backToTopButton.classList.remove('visible');
+            }
+        };
+    
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    
+        window.addEventListener('scroll', toggleBackToTop);
+    });
+    
 </script
 
 </html>
