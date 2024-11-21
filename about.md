@@ -54,8 +54,8 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
 - **Drexel University** \| *2016* \| *Philadelphia, PA*
 
 ## Awards
-- **Deans List** *2015 \| 2016*
-- **1st Place for Gameplay** *Intel University Games Showcase \| GDC \| 2016* \| **[Mirrors of Grimaldi]({{ site.baseurl }}/project/2016/05/23/mirrors-of-grimaldi/)**
+- **Deans List** \| Drexel University \| *2015 \| 2016*
+- **1st Place for Gameplay** \| *Intel University Games Showcase \| GDC \| 2016* \| **[Mirrors of Grimaldi]({{ site.baseurl }}/project/2016/05/23/mirrors-of-grimaldi/)**
 
 <!-- 
 ## Favorites
