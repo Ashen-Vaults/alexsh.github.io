@@ -18,15 +18,15 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
 <script>
   function getPlatformIcon(platform) {
     const platformIcons = {
-      "Steam": "/assets/images/platform_icons/steam-icon.png",
-      "PS": "/assets/images/platform_icons/ps-icon.png",
-      "Xbox": "/assets/images/platform_icons/xbox-icon.png",
-      "Switch": "/assets/images/platform_icons/switch-icon.png",
-      "PC": "/assets/images/platform_icons/pc-icon.png",
-      "iOS": "/assets/images/platform_icons/ios-icon.png",
-      "Android": "/assets/images/platform_icons/android-icon.png",
-      "HTC Vive": "/assets/images/platform_icons/htc-vive-icon.png",
-      "Oculus Rift": "/assets/images/platform_icons/oculus-rift-icon.png"
+      "steam": "/assets/images/platform_icons/steam-icon.png",
+      "ps": "/assets/images/platform_icons/ps-icon.png",
+      "xbox": "/assets/images/platform_icons/xbox-icon.png",
+      "switch": "/assets/images/platform_icons/switch-icon.png",
+      "pc": "/assets/images/platform_icons/pc-icon.png",
+      "ios": "/assets/images/platform_icons/ios-icon.png",
+      "android": "/assets/images/platform_icons/android-icon.png",
+      "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
+      "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png"
     };
     return platformIcons[platform] || null;
   }
@@ -40,14 +40,18 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     }))];
     
     const container = document.getElementById(containerId);
+    container.style.display = "flex";
+    container.style.justifyContent = "center";
+    container.style.alignItems = "center";
     uniquePlatforms.forEach(platform => {
-      const iconPath = getPlatformIcon(platform);
+      const iconPath = getPlatformIcon(platform.toLowerCase());
       if (iconPath) {
         const img = document.createElement("img");
         img.src = iconPath;
         img.alt = platform;
         img.style.width = "30px";
         img.style.height = "30px";
+        img.style.margin = "0 5px";
         container.appendChild(img);
       }
     });
@@ -55,6 +59,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
 </script>
 
 # Professional Projects
+
 <table>
   <thead>
     <tr>
@@ -71,7 +76,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
       <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
       <td>{{ post.role }}</td>
       <td>
-        <div id="platform-icons-{{ forloop.index0 }}" style="display: flex; gap: 10px;align-items: center;justify-content: center;"></div>
+        <div id="platform-icons-{{ forloop.index0 }}"></div>
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             renderPlatformIcons("{{ post.platforms }}", "platform-icons-{{ forloop.index0 }}");
@@ -101,7 +106,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
       <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
       <td>{{ post.role }}</td>
       <td>
-        <div id="platform-icons-personal-{{ forloop.index0 }}" style="display: flex; gap: 10px;align-items: center;justify-content: center;"></div>
+        <div id="platform-icons-personal-{{ forloop.index0 }}"></div>
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             renderPlatformIcons("{{ post.platforms }}", "platform-icons-personal-{{ forloop.index0 }}");
