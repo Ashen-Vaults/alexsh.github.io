@@ -12,7 +12,7 @@ title: Projects
         <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
             <div class="item {% if post.star %}star{% endif %}">
                 <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
-                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(event, this)">ℹ</button>
+                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this)">ℹ</button>
                 <div class="overlay">
                     <div class="project-info">
                         <h3 class="title">{{ post.title }}</h3>
@@ -40,7 +40,7 @@ title: Projects
         <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{% endif %}">
             <div class="item {% if post.star %}star{% endif %}">
                 <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
-                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(event, this)">ℹ</button>
+                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this)">ℹ</button>
                 <div class="overlay">
                     <div class="project-info">
                         <h3 class="title">{{ post.title }}</h3>
@@ -58,7 +58,7 @@ title: Projects
 </section>
 
 <script>
-  function toggleInfo(event, button) {
+  function toggleInfo(button) {
     event.stopPropagation();
     const overlay = button.nextElementSibling;
     if (overlay.style.display === "block") {
