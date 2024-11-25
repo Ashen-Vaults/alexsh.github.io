@@ -18,7 +18,7 @@ description: "A local, competitive multiplayer game that takes the concept of sp
 author: alexsh
 externalLink: false
 platforms: Steam
-role: Programmer/Designer
+role: Programmer and Designer
 categories: personal
 studio: 51st and Fire
 ---
