@@ -17,11 +17,10 @@ resume: false
 resume-external: true
 resume-url: 
 
-
 url: https://alexsh.me
 # your url: https://USERNAME.github.io
 
-permalink: pretty
+permalink: /projs/:categories/:title/
 
 # To enable google analytics, supply your token below
 analytics-google: 'UA-113227746-1'
@@ -37,6 +36,13 @@ disqus:
 
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
 # twitter: mytwitter
 # processing: 20040
 # google: mygoogle

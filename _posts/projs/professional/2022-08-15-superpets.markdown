@@ -1,15 +1,13 @@
 ---
-title: "Mirrors of Grimaldi"
+title: "DC League of Super-Pets: The Adventures of Krypto and Ace"
 layout: post
-date: 2016-05-23 04:55
+date: 2022-08-15 06:55
 tag: 
 - unity3d
-- sproj
+- phl collective
 - c#
-- ai
 - games
-- gdc
-image: /assets/images/mog/MogLogoFull.png
+image: /assets/images/projs/superpets/superpets_cover.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
@@ -17,23 +15,25 @@ description: "A local, competitive multiplayer game that takes the concept of sp
 category: project
 author: alexsh
 externalLink: false
-
-
+platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
+role: Lead Platform Programmer
+categories: professional
+studio: PHL Collective
 
 ---
 
-**Mirrors of Grimaldi** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.
+**DC League of Super-Pets: The Adventures of Krypto and Ace** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.
 
 
 ![Conceptual Art](/assets/images/mog/mog_concept.jpg)
 
-**Split-screen** is at the forefront of Mirrors of Grimaldi and how players interact with our dynamically changing split-screen will determine who is victorious in this competitive multiplayer experience. The Player main weapon is the ability to punch minions into enemy players screens, who will then target and attack your opponents instead of you. With thrilling and strategic gameplay, Mirrors of Grimaldi brings a fresh new face to local multiplayer that will keep hardcore and casual gamers alike asking for another rematch.
+**Split-screen** is at the forefront of DC League of Super-Pets: The Adventures of Krypto and Ace and how players interact with our dynamically changing split-screen will determine who is victorious in this competitive multiplayer experience. The Player main weapon is the ability to punch minions into enemy players screens, who will then target and attack your opponents instead of you. With thrilling and strategic gameplay, DC League of Super-Pets: The Adventures of Krypto and Ace brings a fresh new face to local multiplayer that will keep hardcore and casual gamers alike asking for another rematch.
 
 <p align="center">
 <iframe width="560" height="310" src="https://player.vimeo.com/video/159974647" frameborder="0" allowfullscreen></iframe>
 
 
-<p><a href="https://vimeo.com/159974647">Mirrors of Grimaldi GDC Footage</a> from <a href="https://vimeo.com/51standfire">51st and Fire</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/159974647">DC League of Super-Pets: The Adventures of Krypto and Ace GDC Footage</a> from <a href="https://vimeo.com/51standfire">51st and Fire</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </p>
 
 

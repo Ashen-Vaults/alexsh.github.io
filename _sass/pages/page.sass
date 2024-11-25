@@ -5,6 +5,7 @@
     > h1
         text-align: center
         margin-bottom: 1rem
+
 ul, li
     padding: 0
     margin: 0
@@ -26,7 +27,7 @@ hr
     background-color: rgba($gama, 1.0)
     margin: 15px 0
 
-.about
+.about 
     img
         margin: 0 auto
         display: block
@@ -36,6 +37,18 @@ hr
         padding: 5px
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
         transition: transform 0.3s, box-shadow 0.3s
+
+    table img
+        border: none
+        border-radius: 0px
+        padding: 0px
+        width: 25px !important
+        height: auto !important
+        margin-right: 0px !important
+        display: inline-block !important
+        vertical-align: middle !important
+        box-shadow: 0 0 0 0
+
         
     > h2
         margin: 0
@@ -51,6 +64,8 @@ table
     border-spacing: 0
     text-align: left
     margin-bottom: 10px 
+    font-size: 1.5rem
+    align-items: center
 
     th, td
         padding: 5px
@@ -62,7 +77,6 @@ table
             border-bottom: 1px outset rgba($alpha, 0.1)
     th
         font-weight: italic
-        text-align: left
         color: $beta
 
     td:first-child
@@ -75,17 +89,23 @@ table
             font-weight: italic
             color: $delta
 
-    td:last-child
-        text-align: right
-        font-style: italic
+    th:nth-child(1), td:nth-child(1)
+        width: 55%
+
+    th:nth-child(2), td:nth-child(2)
+        width: 25%
+        
+    th:nth-child(3), td:nth-child(3)
+        width: 20%
+        align-items: center
+        text-align: center
 
     td:has(a)
-        color: $delta
+        color: $delta !important
         a
-            color: inherit
-            transition: color 0.3s
+            color: inherit !important
+            transition: color 0.3s !important
             &:hover, &:focus
-                color: $gama
+                color: $gama !important
             &:active
-                color: $gama
-
+                color: $gama !important

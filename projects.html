@@ -3,18 +3,67 @@ layout: page
 title: Projects
 ---
 
-<section class="list">
+<h1 style="text-align: center;">Professional</h1>
+<hr>
+<section class="project-elem-container">
     {% for post in site.posts %} {% if post.projects %}
-    <header class="project-elem {% if site.animation %}elem-animated{% endif %}">
-        <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">      
-             
-              
-             <div class="item {% if post.star %}star{% endif %}">  
-    					<img class="selfie" src="{{post.image}}"/>
-            </div>          
+    {% if post.projects and post.categories contains "professional" %}
+    <div class="project-elem">
+        <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+            <div class="item {% if post.star %}star{% endif %}">
+                <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
+                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this)">ℹ</button>
+                <div class="overlay">
+                    <div class="project-info">
+                        <h3 class="title">{{ post.title }}</h3>
+                        <p class="role">{{ post.role }}</p>
+                        <p class="release-date">{{ post.date | date: "%B %d, %Y" }}</p>
+                        <p class="platforms">{{ post.platforms }}</p>
+                        <p class="Studio">{{ post.studio }}</p>
+                    </div>
+                </div>
+            </div>
         </a>
-
-    </header>
+    </div>
+    {% endif %}
     {% endif %} {% endfor %}
-   
 </section>
+<br>
+<br>
+<br>
+<h1 style="text-align: center;">Personal</h1>
+<hr>
+<section class="project-elem-container">
+    {% for post in site.posts %} {% if post.projects %}
+    {% if post.projects and post.categories contains "personal" %}
+    <div class="project-elem">
+        <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{% endif %}">
+            <div class="item {% if post.star %}star{% endif %}">
+                <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
+                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this)">ℹ</button>
+                <div class="overlay">
+                    <div class="project-info">
+                        <h3 class="title">{{ post.title }}</h3>
+                        <p class="role">{{ post.role }}</p>
+                        <p class="release-date">{{ post.date | date: "%B %d, %Y" }}</p>
+                        <p class="platforms">{{ post.platforms }}</p>
+                        <p class="Studio">{{ post.studio }}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+    {% endif %} {% endfor %}
+</section>
+
+<script>
+  function toggleInfo(button) {
+    const overlay = button.nextElementSibling;
+    if (overlay.style.display === "block") {
+      overlay.style.display = "none";
+    } else {
+      overlay.style.display = "block";
+    }
+  }
+</script>
