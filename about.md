@@ -20,8 +20,9 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     transition: filter 0.3s;
   }
   .platform-icon-link:hover img {
-    filter: brightness(1.5) contrast(1.1);
-    transform: scale(1.1);
+    /* Disabling apparently violates xbox logo law */
+    /* filter: brightness(1.5) contrast(1.1);
+    transform: scale(1.1); */
   }
 </style>
 <script>
