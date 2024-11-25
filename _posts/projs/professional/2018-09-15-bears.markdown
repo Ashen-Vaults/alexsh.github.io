@@ -19,6 +19,10 @@ platforms: HTC Vive, Oculus Rift
 role: Additional Programming
 categories: professional
 studio: PHL Collective
+platform_links:
+  Htc: "https://www.cartoonnetworkhotel.com/"
+  Oculus: "https://www.cartoonnetworkhotel.com/"
+
 
 ---
 

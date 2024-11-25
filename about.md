@@ -12,9 +12,18 @@ Throughout my career, I’ve worked closely with artists, designers, producers, 
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by creating engaging experiences, solving complex technical problems, and collaborating with talented people to deliver fun games.
 
-**To see the projects I've worked on, click on one of the links below or visit the [Project](/projects/) page for more information about the game and my role.**
+**To see the projects I've worked on, click on one of the links below or visit the project page for more information about the game, my role, and the release date.**
 
 ---
+<style>
+  .platform-icon-link img {
+    transition: filter 0.3s;
+  }
+  .platform-icon-link:hover img {
+    filter: brightness(1.5) contrast(1.1);
+    transform: scale(1.1);
+  }
+</style>
 <script>
   function getPlatformIcon(platform) {
     const platformIcons = {
@@ -31,7 +40,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     return platformIcons[platform] || null;
   }
 
-  function renderPlatformIcons(platformsString, containerId) {
+  function renderPlatformIcons(platformsString, platformLinks, containerId) {
     const platforms = platformsString.split(", ").map(platform => platform.trim().toLowerCase());
     const uniquePlatforms = [...new Set(platforms.map(platform => {
       if (platform === "ps4" || platform === "ps5") return "PS";
@@ -45,14 +54,20 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     container.style.alignItems = "center";
     uniquePlatforms.forEach(platform => {
       const iconPath = getPlatformIcon(platform.toLowerCase());
-      if (iconPath) {
+      const platformLink = platformLinks[platform];
+      if (iconPath && platformLink) {
+        const a = document.createElement("a");
+        a.href = platformLink;
+        a.target = "_blank";
+        a.className = "platform-icon-link";
         const img = document.createElement("img");
         img.src = iconPath;
         img.alt = platform;
         img.style.width = "30px";
         img.style.height = "30px";
         img.style.margin = "0 5px";
-        container.appendChild(img);
+        a.appendChild(img);
+        container.appendChild(a);
       }
     });
   }
@@ -79,7 +94,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
         <div id="platform-icons-{{ forloop.index0 }}"></div>
         <script>
           document.addEventListener("DOMContentLoaded", function() {
-            renderPlatformIcons("{{ post.platforms }}", "platform-icons-{{ forloop.index0 }}");
+            renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-{{ forloop.index0 }}");
           });
         </script>
       </td>
@@ -109,7 +124,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
         <div id="platform-icons-personal-{{ forloop.index0 }}"></div>
         <script>
           document.addEventListener("DOMContentLoaded", function() {
-            renderPlatformIcons("{{ post.platforms }}", "platform-icons-personal-{{ forloop.index0 }}");
+            renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-personal-{{ forloop.index0 }}");
           });
         </script>
       </td>

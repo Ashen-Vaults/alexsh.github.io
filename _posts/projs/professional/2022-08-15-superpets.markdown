@@ -19,7 +19,11 @@ platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
 role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
-
+platform_links:
+  PS: "https://store.playstation.com/en-us/product/UP3824-PPSA07079_00-SUPERPETSGAME001"
+  Xbox: "https://www.xbox.com/en-us/games/store/dc-league-of-super-pets-the-adventures-of-krypto-and-ace/9np1g0t8jdmr"
+  Switch: "https://www.nintendo.com/us/store/products/dc-league-of-super-pets-the-adventures-of-krypto-and-ace-switch/"
+  Steam: "https://store.steampowered.com/app/1697760/DC_League_of_SuperPets_The_Adventures_of_Krypto_and_Ace/"
 ---
 
 **DC League of Super-Pets: The Adventures of Krypto and Ace** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.
