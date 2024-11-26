@@ -75,7 +75,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     });
   }
 </script>
-
+<br>
 # Professional Projects
 
 <table>
@@ -106,7 +106,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     {% endfor %}
   </tbody>
 </table>
-
+<br>
 # Personal Projects
 
 <table>
@@ -136,6 +136,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     {% endfor %}
   </tbody>
 </table>
+<br>
 
 ---
 ## Skills
