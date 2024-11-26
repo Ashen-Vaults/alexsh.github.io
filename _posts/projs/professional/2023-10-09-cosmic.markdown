@@ -20,10 +20,10 @@ role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
 platform_links:
-  PS: "https://store.playstation.com/en-us/product/UP3824-PPSA08422_00-JUSTICEBASEGAME1"
-  Xbox: "https://www.xbox.com/en-us/games/store/dcs-justice-league-cosmic-chaos/9nm1cjpxhc8k"
-  Switch: "https://www.nintendo.com/us/store/products/dcs-justice-league-cosmic-chaos-switch/"
-  Steam: "https://store.steampowered.com/app/1944850/DCs_Justice_League_Cosmic_Chaos/"
+  ps: "https://store.playstation.com/en-us/product/UP3824-PPSA08422_00-JUSTICEBASEGAME1"
+  xbox: "https://www.xbox.com/en-us/games/store/dcs-justice-league-cosmic-chaos/9nm1cjpxhc8k"
+  switch: "https://www.nintendo.com/us/store/products/dcs-justice-league-cosmic-chaos-switch/"
+  steam: "https://store.steampowered.com/app/1944850/DCs_Justice_League_Cosmic_Chaos/"
 
 ---
 

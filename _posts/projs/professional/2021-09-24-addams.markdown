@@ -20,10 +20,10 @@ role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
 platform_links:
-  PS: "https://store.playstation.com/en-us/product/UP3824-CUSA25060_00-ADDAMSBASEGAME01"
-  Xbox: "https://www.xbox.com/en-us/games/store/the-addams-family-mansion-mayhem/9nk9lwx511gx?activetab=pivot:overviewtab"
-  Switch: "https://www.nintendo.com/us/store/products/the-addams-family-mansion-mayhem-switch/"
-  Steam: "https://store.steampowered.com/app/1543830/The_Addams_Family_Mansion_Mayhem/"
+  ps: "https://store.playstation.com/en-us/product/UP3824-CUSA25060_00-ADDAMSBASEGAME01"
+  xbox: "https://www.xbox.com/en-us/games/store/the-addams-family-mansion-mayhem/9nk9lwx511gx?activetab=pivot:overviewtab"
+  switch: "https://www.nintendo.com/us/store/products/the-addams-family-mansion-mayhem-switch/"
+  steam: "https://store.steampowered.com/app/1543830/The_Addams_Family_Mansion_Mayhem/"
 
 ---
 

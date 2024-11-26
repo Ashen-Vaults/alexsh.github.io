@@ -20,8 +20,8 @@ role: Additional Programming
 categories: professional
 studio: PHL Collective
 platform_links:
-  Htc: "https://www.cartoonnetworkhotel.com/"
-  Oculus: "https://www.cartoonnetworkhotel.com/"
+  htc vive: "https://www.cartoonnetworkhotel.com/"
+  oculus rift: "https://www.cartoonnetworkhotel.com/"
 
 
 ---

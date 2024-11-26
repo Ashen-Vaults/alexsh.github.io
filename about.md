@@ -12,7 +12,7 @@ Throughout my career, I’ve worked closely with artists, designers, producers, 
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by creating engaging experiences, solving complex technical problems, and collaborating with talented people to deliver fun games.
 
-**To see the projects I've worked on, click on one of the links below or visit the project page for more information about the game, my role, and the release date.**
+**To see the projects I've worked on, click on one of the links below or visit the [project](/projects/) page for more information about the game, my role, and the release date.**
 
 ---
 <style>
@@ -36,7 +36,8 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
       "ios": "/assets/images/platform_icons/ios-icon.png",
       "android": "/assets/images/platform_icons/android-icon.png",
       "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
-      "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png"
+      "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png",
+      "itch": "/assets/images/platform_icons/itchio-icon.png"
     };
     return platformIcons[platform] || null;
   }
@@ -54,8 +55,9 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     container.style.justifyContent = "center";
     container.style.alignItems = "center";
     uniquePlatforms.forEach(platform => {
-      const iconPath = getPlatformIcon(platform.toLowerCase());
-      const platformLink = platformLinks[platform];
+      const platformlink_lowercase = platform.toLowerCase();
+      const iconPath = getPlatformIcon(platformlink_lowercase);
+      const platformLink = platformLinks[platformlink_lowercase];
       if (iconPath && platformLink) {
         const a = document.createElement("a");
         a.href = platformLink;

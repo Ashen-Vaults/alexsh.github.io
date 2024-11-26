@@ -17,12 +17,12 @@ hidden: false
 description: "A local, competitive multiplayer game that takes the concept of split-screen and turns it into an integral game mechanic"
 author: alexsh
 externalLink: false
-platforms: Steam
+platforms: itch
 role: Programmer and Designer
 categories: personal
 studio: 51st and Fire
 platform_links:
-  "Steam": "https://51standfire.itch.io/mirrors-of-grimaldi"
+  "itch": "https://51standfire.itch.io/mirrors-of-grimaldi"
 ---
 
 **Mirrors of Grimaldi** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.
