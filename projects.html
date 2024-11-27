@@ -5,7 +5,7 @@ title: Projects
 
 <h1 style="text-align: center;">Professional</h1>
 <hr>
-<section class="project-elem-container">
+<section class="project-elem-container {% if site.animation %}animated{% endif %}">
     {% for post in site.posts %} {% if post.projects %}
     {% if post.projects and post.categories contains "professional" %}
     <div class="project-elem">
