@@ -12,7 +12,7 @@ Throughout my career, I’ve worked closely with artists, designers, producers, 
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by creating engaging experiences, solving complex technical problems, and collaborating with talented people to deliver fun games.
 
-##### // For more information on the projects I've worked on, expand the project breakdown below or visit [projects](/projects/).
+##### For more information on the projects I've worked on, expand the project breakdown below or visit [projects](/projects/).
 
 <br>
 <button id="toggle-section-btn" onclick="toggleSection()">
