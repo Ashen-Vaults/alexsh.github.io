@@ -13,6 +13,11 @@
         {% else %}
             <span class="link">
                 <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+                <div class="overlay">
+                    <div class="project-info">
+                        <h3 class="title">{{ site.bio }}</h3>
+                    </div>
+                </div>
             </span>
         {% endif %}
     </header>

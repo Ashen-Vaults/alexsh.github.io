@@ -24,7 +24,7 @@ li
 hr
     border: none
     height: 1px
-    background-color: rgba($gama, 1.0)
+    background-color: rgba($epsilon, 1.0)
     margin: 15px 0
 
 .about 
@@ -33,7 +33,7 @@ hr
         display: block
         width: 250px
         border: 1px solid $epsilon // Accent color
-        border-radius: 15px // Slight rounding
+        border-radius: 5px // Slight rounding
         padding: 0px
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
         transition: transform 0.3s, box-shadow 0.3s
@@ -77,7 +77,7 @@ table
             border-bottom: 1px outset rgba($alpha, 0.1)
     th
         font-weight: italic
-        color: $beta
+        color: $gama
 
     td:first-child
         color: $alpha
@@ -99,6 +99,8 @@ table
         width: 20%
         align-items: center
         text-align: center
+        a
+            transform: scale(1)
 
     td:has(a)
         color: $delta !important

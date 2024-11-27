@@ -2,19 +2,18 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
 Hi, I’m **Alex**, a passionate software engineer at **PHL Collective** with over six years of experience in the video game industry. I specialize in cross-platform development, build pipeline automation, and performance optimization, but I’m always eager to take on any task that contributes to a project’s success.
 
-I’ve had the opportunity to wear many hats as a software engineer in games, and I enjoy exploring different aspects of development. Whether it’s graphics rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I’m always ready to dive in and take on new challenges.
+I’ve had the opportunity to wear many hats as a software engineer in video games, and I enjoy exploring different aspects of development. Whether it’s graphics rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I’m always ready to dive in and take on new challenges.
 
-Throughout my career, I’ve worked closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship nine titles across multiple platforms. I’ve developed the ability to manage multiple projects simultaneously while keeping deadlines on track. Each project brought its own unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a role in their successful launches.
+Throughout my career, I’ve worked closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship nine titles across multiple platforms. Each project brought its own unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a role in their successful launches.
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by creating engaging experiences, solving complex technical problems, and collaborating with talented people to deliver fun games.
 
-**To see the projects I've worked on, click on one of the links below or visit the [project](/projects/) page for more information about the game, my role, and the release date.**
+##### For more information on the projects I've worked on, click one of the links below or visit [projects](/projects/).
 
----
 <style>
   .platform-icon-link img {
     transition: filter 0.3s;
@@ -37,7 +36,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
       "android": "/assets/images/platform_icons/android-icon.png",
       "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
       "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png",
-      "itch": "/assets/images/platform_icons/itchio-icon.png"
+      "itch": "/assets/images/platform_icons/itch-icon.png"
     };
     return platformIcons[platform] || null;
   }
@@ -137,8 +136,6 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
   </tbody>
 </table>
 <br>
-
----
 ## Skills
 - **Languages**: C#, C, C++, Python, Groovy, HLSL, SQL
 - **Game Engines**: Unity, Unreal, Custom Engines
