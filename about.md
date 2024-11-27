@@ -4,9 +4,9 @@ layout: page
 ---
 <!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-Hi, I’m **Alex**, a passionate software engineer at **PHL Collective** with over six years of experience in the video game industry. I specialize in cross-platform development, build pipeline automation, and performance optimization, but I’m always eager to take on any task that contributes to a project’s success.
+Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/) with over six years of experience in the video game industry. I specialize in cross-platform development, build pipeline automation, and performance optimization, but I’m always eager to take on any task that contributes to a project’s success.
 
-I’ve had the opportunity to wear many hats as a software engineer in video games, and I enjoy exploring different aspects of development. Whether it’s graphics rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I’m always ready to dive in and take on new challenges.
+I’ve had the opportunity to wear many hats as a software engineer in video games, and I enjoy exploring different aspects of development. Whether it’s graphics rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I’m always ready to take on new challenges.
 
 Throughout my career, I’ve worked closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship nine titles across multiple platforms. Each project brought its own unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a role in their successful launches.
 
@@ -158,8 +158,8 @@ function toggleSection() {
 ## Skills
 - **Languages**: C#, C, C++, Python, Groovy, HLSL, SQL
 - **Game Engines**: Unity, Unreal, Custom Engines
-- **Tools**: Visual Studio, RenderDoc, SDL2, Perforce, Plastic SCM, Git, Jenkins, Jira, ClickUp, FMOD, Linux, Discord
-- **Platforms**: PS4, PS5, Xbox One, Xbox Series X, Nintendo Switch, Windows, Steamdeck, iOS, Android
+- **Tools**: Visual Studio, RenderDoc, SDL2, Perforce, Plastic SCM, Git, Jenkins, Jira, ClickUp, FMOD, Discord
+- **Platforms**: PS4, PS5, Xbox One, Xbox Series X, Nintendo Switch, Windows, Steamdeck, iOS, Android, Linux
 
 ## Education
 - **Bachelors in Computer Science**
