@@ -8,6 +8,7 @@ tag:
 - c#
 - games
 image: /assets/images/projs/superpets/superpets_cover.png
+logo: /assets/images/projs/superpets/superpets_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
@@ -29,7 +30,7 @@ platform_links:
 **DC League of Super-Pets: The Adventures of Krypto and Ace** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.
 
 
-![Conceptual Art](/assets/images/mog/mog_concept.jpg)
+![Conceptual Art](image)
 
 **Split-screen** is at the forefront of DC League of Super-Pets: The Adventures of Krypto and Ace and how players interact with our dynamically changing split-screen will determine who is victorious in this competitive multiplayer experience. The Player main weapon is the ability to punch minions into enemy players screens, who will then target and attack your opponents instead of you. With thrilling and strategic gameplay, DC League of Super-Pets: The Adventures of Krypto and Ace brings a fresh new face to local multiplayer that will keep hardcore and casual gamers alike asking for another rematch.
 

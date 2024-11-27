@@ -8,6 +8,7 @@ tag:
 - c#
 - games
 image: /assets/images/projs/cosmic/cosmic_cover.png
+logo: /assets/images/projs/cosmic/cosmic_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination

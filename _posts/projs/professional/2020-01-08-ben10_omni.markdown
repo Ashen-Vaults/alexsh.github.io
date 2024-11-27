@@ -8,6 +8,7 @@ tag:
 - c#
 - games
 image: /assets/images/projs/ben10_omni/ben10_omni_cover.png
+logo: /assets/images/projs/ben10_omni/ben10_omni_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination

@@ -8,6 +8,7 @@ tag:
 - c#
 - games
 image: /assets/images/projs/goozy/goozy_cover.png
+logo: /assets/images/projs/goozy/goozy_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination

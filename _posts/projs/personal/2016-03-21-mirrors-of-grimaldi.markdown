@@ -12,6 +12,7 @@ tag:
 - games
 - gdc
 image: /assets/images/mog/mog_concept.jpg
+logo: /assets/images/mog/MogLogoFull.jpg
 headerImage: false
 hidden: false
 description: "A local, competitive multiplayer game that takes the concept of split-screen and turns it into an integral game mechanic"
