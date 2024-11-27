@@ -12,130 +12,152 @@ Throughout my career, I’ve worked closely with artists, designers, producers, 
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by creating engaging experiences, solving complex technical problems, and collaborating with talented people to deliver fun games.
 
-##### For more information on the projects I've worked on, click one of the links below or visit [projects](/projects/).
+##### For more information on the projects I've worked on, expand the project breakdown below or visit [projects](/projects/).
 
-<style>
-  .platform-icon-link img {
-    transition: filter 0.3s;
-  }
-  .platform-icon-link:hover img {
-    /* Disabling apparently violates xbox logo law */
-    /* filter: brightness(1.5) contrast(1.1);
-    transform: scale(1.1); */
-  }
-</style>
+<br>
+<button id="toggle-section-btn" onclick="toggleSection()">
+    <span id="toggle-icon">▼</span> Projects
+</button>
+
+<div id="collapsible-section" style="display: none;">
+  <style>
+    .platform-icon-link img {
+      transition: filter 0.3s;
+    }
+    .platform-icon-link:hover img {
+      /* Disabling apparently violates xbox logo law */
+      /* filter: brightness(1.5) contrast(1.1);
+      transform: scale(1.1); */
+    }
+  </style>
+  <script>
+    function getPlatformIcon(platform) {
+      const platformIcons = {
+        "steam": "/assets/images/platform_icons/steam-icon.png",
+        "ps": "/assets/images/platform_icons/ps-icon.png",
+        "xbox": "/assets/images/platform_icons/xbox-icon.png",
+        "switch": "/assets/images/platform_icons/switch-icon.png",
+        "pc": "/assets/images/platform_icons/pc-icon.png",
+        "ios": "/assets/images/platform_icons/ios-icon.png",
+        "android": "/assets/images/platform_icons/android-icon.png",
+        "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
+        "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png",
+        "itch": "/assets/images/platform_icons/itch-icon.png"
+      };
+      return platformIcons[platform] || null;
+    }
+
+    function renderPlatformIcons(platformsString, platformLinks, containerId) {
+      const platforms = platformsString.split(", ").map(platform => platform.trim().toLowerCase());
+      const uniquePlatforms = [...new Set(platforms.map(platform => {
+        if (platform === "ps4" || platform === "ps5") return "PS";
+        if (platform === "xbox one" || platform === "xbox series x") return "Xbox";
+        return platform.charAt(0).toUpperCase() + platform.slice(1);
+      }))];
+      
+      const container = document.getElementById(containerId);
+      container.style.display = "flex";
+      container.style.justifyContent = "center";
+      container.style.alignItems = "center";
+      uniquePlatforms.forEach(platform => {
+        const platformlink_lowercase = platform.toLowerCase();
+        const iconPath = getPlatformIcon(platformlink_lowercase);
+        const platformLink = platformLinks[platformlink_lowercase];
+        if (iconPath && platformLink) {
+          const a = document.createElement("a");
+          a.href = platformLink;
+          a.target = "_blank";
+          a.className = "platform-icon-link";
+          const img = document.createElement("img");
+          img.src = iconPath;
+          img.alt = platform;
+          img.style.width = "30px";
+          img.style.height = "30px";
+          img.style.margin = "0 5px";
+          a.appendChild(img);
+          container.appendChild(a);
+        }
+      });
+    }
+  </script>
+  <br>
+
+  <h1>Professional Projects</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Role</th>
+        <th>Platforms</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in sorted_posts %}
+      {% if post.projects and post.categories contains "professional" %}
+      <tr>
+        <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
+        <td>{{ post.role }}</td>
+        <td>
+          <div id="platform-icons-{{ forloop.index0 }}"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-{{ forloop.index0 }}");
+            });
+          </script>
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  <br>
+
+  <h1>Personal Projects</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Role</th>
+        <th>Platforms</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in sorted_posts %}
+      {% if post.projects and post.categories contains "personal" %}
+      <tr>
+        <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
+        <td>{{ post.role }}</td>
+        <td>
+          <div id="platform-icons-personal-{{ forloop.index0 }}"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-personal-{{ forloop.index0 }}");
+            });
+          </script>
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  <br>
+</div>
+
 <script>
-  function getPlatformIcon(platform) {
-    const platformIcons = {
-      "steam": "/assets/images/platform_icons/steam-icon.png",
-      "ps": "/assets/images/platform_icons/ps-icon.png",
-      "xbox": "/assets/images/platform_icons/xbox-icon.png",
-      "switch": "/assets/images/platform_icons/switch-icon.png",
-      "pc": "/assets/images/platform_icons/pc-icon.png",
-      "ios": "/assets/images/platform_icons/ios-icon.png",
-      "android": "/assets/images/platform_icons/android-icon.png",
-      "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
-      "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png",
-      "itch": "/assets/images/platform_icons/itch-icon.png"
-    };
-    return platformIcons[platform] || null;
-  }
+function toggleSection() {
+    const section = document.getElementById("collapsible-section");
+    const icon = document.getElementById("toggle-icon");
+    const isHidden = section.style.display === "none";
 
-  function renderPlatformIcons(platformsString, platformLinks, containerId) {
-    const platforms = platformsString.split(", ").map(platform => platform.trim().toLowerCase());
-    const uniquePlatforms = [...new Set(platforms.map(platform => {
-      if (platform === "ps4" || platform === "ps5") return "PS";
-      if (platform === "xbox one" || platform === "xbox series x") return "Xbox";
-      return platform.charAt(0).toUpperCase() + platform.slice(1);
-    }))];
-    
-    const container = document.getElementById(containerId);
-    container.style.display = "flex";
-    container.style.justifyContent = "center";
-    container.style.alignItems = "center";
-    uniquePlatforms.forEach(platform => {
-      const platformlink_lowercase = platform.toLowerCase();
-      const iconPath = getPlatformIcon(platformlink_lowercase);
-      const platformLink = platformLinks[platformlink_lowercase];
-      if (iconPath && platformLink) {
-        const a = document.createElement("a");
-        a.href = platformLink;
-        a.target = "_blank";
-        a.className = "platform-icon-link";
-        const img = document.createElement("img");
-        img.src = iconPath;
-        img.alt = platform;
-        img.style.width = "30px";
-        img.style.height = "30px";
-        img.style.margin = "0 5px";
-        a.appendChild(img);
-        container.appendChild(a);
-      }
-    });
-  }
+    section.style.display = isHidden ? "block" : "none";
+    icon.textContent = isHidden ? "▲" : "▼";
+}
 </script>
-<br>
-# Professional Projects
 
-<table>
-  <thead>
-    <tr>
-      <th>Project</th>
-      <th>Role</th>
-      <th>Platforms</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-    {% for post in sorted_posts %}
-    {% if post.projects and post.categories contains "professional" %}
-    <tr>
-      <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
-      <td>{{ post.role }}</td>
-      <td>
-        <div id="platform-icons-{{ forloop.index0 }}"></div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-{{ forloop.index0 }}");
-          });
-        </script>
-      </td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-<br>
-# Personal Projects
 
-<table>
-  <thead>
-    <tr>
-      <th>Project</th>
-      <th>Role</th>
-      <th>Platforms</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for post in sorted_posts %}
-    {% if post.projects and post.categories contains "personal" %}
-    <tr>
-      <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
-      <td>{{ post.role }}</td>
-      <td>
-        <div id="platform-icons-personal-{{ forloop.index0 }}"></div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-personal-{{ forloop.index0 }}");
-          });
-        </script>
-      </td>
-    </tr>
-    {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-<br>
 ## Skills
 - **Languages**: C#, C, C++, Python, Groovy, HLSL, SQL
 - **Game Engines**: Unity, Unreal, Custom Engines
