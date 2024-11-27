@@ -82,7 +82,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
   </script>
   <br>
 
-  <h1>Professional Projects</h1>
+  <h2>Professional Projects</h2>
 
   <table>
     <thead>
@@ -114,7 +114,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
   </table>
   <br>
 
-  <h1>Personal Projects</h1>
+  <h2>Personal Projects</h2>
 
   <table>
     <thead>
