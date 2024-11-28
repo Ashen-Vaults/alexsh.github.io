@@ -138,6 +138,13 @@ table
         color: $gama
 
 #collapsible-section
-    border: 3px solid $gama
-    border-radius: 8px
-    padding-left: 10px
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    visibility: hidden
+    transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease
+
+    &.visible
+        max-height: 1000px
+        opacity: 1
+        visibility: visible

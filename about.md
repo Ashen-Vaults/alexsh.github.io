@@ -19,7 +19,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     <span id="toggle-icon">▼</span> Projects
 </button>
 
-<div id="collapsible-section" style="display: none;">
+<div id="collapsible-section" class="hidden">
   <style>
     .platform-icon-link img {
       transition: filter 0.3s;
@@ -144,14 +144,35 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
 </div>
 
 <script>
+
+function toggleWithDisplay() {
+  const element = document.getElementById('animatedElement');
+  if (element.style.display === "none" || !element.style.display) {
+    element.style.display = "block";
+    requestAnimationFrame(() => {
+      element.classList.add('visible');
+    });
+  } else {
+    element.classList.remove('visible');
+    element.addEventListener('transitionend', () => {
+      element.style.display = "none";
+    }, { once: true });
+  }
+}
+
 function toggleSection() {
     const section = document.getElementById("collapsible-section");
     const icon = document.getElementById("toggle-icon");
-    const isHidden = section.style.display === "none";
 
-    section.style.display = isHidden ? "block" : "none";
-    icon.textContent = isHidden ? "▲" : "▼";
+    if (section.classList.contains("visible")) {
+        section.classList.remove("visible");
+        icon.textContent = "▼";
+    } else {
+        section.classList.add("visible");
+        icon.textContent = "▲";
+    }
 }
+
 </script>
 
 
