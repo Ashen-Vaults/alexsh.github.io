@@ -4,19 +4,19 @@ layout: page
 ---
 <!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/) with over six years of experience in the video game industry. I specialize in cross-platform development, build pipeline automation, and performance optimization, but I’m always eager to take on any task that contributes to a project’s success.
+Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/) with over six years of experience in the video game industry. I specialize in cross-platform development, build pipeline automation, and performance optimization, but I’m always eager to tackle new challenges that contribute to a project’s success.
 
-I’ve had the opportunity to wear many hats as a software engineer in video games, and I enjoy exploring different aspects of development. Whether it’s graphics rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I’m always ready to take on new challenges.
+I’ve worn many hats as a software engineer, exploring diverse aspects of game development. Whether its rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I thrive on solving complex technical problems.
 
-Throughout my career, I’ve worked closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship nine titles across multiple platforms. Each project brought its own unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a role in their successful launches.
+Throughout my career, I’ve collaborated closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship nine titles across multiple platforms. Each project presented unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a key role in their successful launches.
 
-As I continue to grow, I’m excited to bring my experience and passion to future projects by creating engaging experiences, solving complex technical problems, and collaborating with talented people to deliver fun games.
+As I continue to grow, I’m excited to bring my experience and passion to future projects by crafting engaging experiences, overcoming technical challenges, and collaborating with talented teams to create fun, memorable games.
 
-##### For more information on the projects I've worked on, expand the project breakdown below or visit [projects](/projects/).
+##### Interested in learning more? Expand the portfolio breakdown below or check out the full [Portfolio](/projects/).
 
 <br>
 <button id="toggle-section-btn" onclick="toggleSection()">
-    <span id="toggle-icon">▼</span> Project Breakdown
+    <span id="toggle-icon">▼</span> Portfolio Breakdown
 </button>
 
 <div id="collapsible-section" class="hidden">
@@ -81,7 +81,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     }
   </script>
 
-  <h2>Professional Projects</h2>
+  <h2>Professional</h2>
 
   <table>
     <thead>
@@ -112,7 +112,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
     </tbody>
   </table>
   
-  <h2>Personal Projects</h2>
+  <h2>Personal</h2>
 
   <table>
     <thead>
