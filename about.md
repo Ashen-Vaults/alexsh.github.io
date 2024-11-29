@@ -159,48 +159,46 @@ function toggleWithDisplay() {
     }, { once: true });
   }
 }
-
 function toggleSection() {
-            const section = document.getElementById("collapsible-section");
-            const icon = document.getElementById("toggle-icon");
+    const section = document.getElementById("collapsible-section");
+    const icon = document.getElementById("toggle-icon");
 
-            if (!section) return;
+    if (!section) return;
 
-            const animationDuration = 500;
-            const viewportCenter = window.innerHeight / 2;
-            const startScroll = window.scrollY;
-            const startTime = performance.now();
+    const animationDuration = 500;
+    const viewportCenter = window.innerHeight / 2;
+    const startScroll = window.scrollY;
+    const startTime = performance.now();
 
-            function animateScroll() {
-                const currentTime = performance.now();
-                const elapsedTime = currentTime - startTime;
-                const progress = Math.min(elapsedTime / animationDuration, 1);
+    function animateScroll() {
+        const currentTime = performance.now();
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / animationDuration, 1);
 
-                const sectionRect = section.getBoundingClientRect();
-                const sectionCenter = sectionRect.top + sectionRect.height / 2 + window.scrollY;
-                const scrollOffset = sectionCenter - viewportCenter;
+        const sectionRect = section.getBoundingClientRect();
+        const sectionCenter = sectionRect.top + sectionRect.height / 2 + window.scrollY;
+        const scrollOffset = sectionCenter - viewportCenter;
 
-                const currentScroll = startScroll + (scrollOffset - startScroll) * progress;
-                window.scrollTo(0, currentScroll);
+        const currentScroll = startScroll + (scrollOffset - startScroll) * progress;
+        window.scrollTo(0, currentScroll);
 
-                if (progress < 1) {
-                    requestAnimationFrame(animateScroll);
-                }
-            }
-
-            if (section.classList.contains("visible")) {
-                section.classList.remove("visible");
-                icon.textContent = "▼";
-                requestAnimationFrame(animateScroll);
-            } else {
-                section.classList.add("visible");
-                section.getBoundingClientRect();
-                icon.textContent = "▲";
-                requestAnimationFrame(animateScroll);
-            }
+        if (progress < 1) {
+            requestAnimationFrame(animateScroll);
         }
-</script>
+    }
 
+    const isVisible = section.classList.contains("visible");
+    section.classList.toggle("visible", !isVisible);
+
+    icon.textContent = isVisible ? "▼" : "▲";
+
+    requestAnimationFrame(() => {
+        animateScroll();
+    });
+}
+
+
+</script>
 
 ## Skills
 - **Languages**: C#, C, C++, Python, Groovy, HLSL, SQL
