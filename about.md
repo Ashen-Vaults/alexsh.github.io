@@ -16,7 +16,7 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
 
 <br>
 <button id="toggle-section-btn" onclick="toggleSection()">
-    <span id="toggle-icon">▼</span> Projects
+    <span id="toggle-icon">▼</span> Project Breakdown
 </button>
 
 <div id="collapsible-section" class="hidden">
