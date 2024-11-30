@@ -33,13 +33,7 @@ platform_links:
 
 **Split-screen** is at the forefront of Mirrors of Grimaldi and how players interact with our dynamically changing split-screen will determine who is victorious in this competitive multiplayer experience. The Player main weapon is the ability to punch minions into enemy players screens, who will then target and attack your opponents instead of you. With thrilling and strategic gameplay, Mirrors of Grimaldi brings a fresh new face to local multiplayer that will keep hardcore and casual gamers alike asking for another rematch.
 
-<p align="center">
-<iframe width="560" height="310" src="https://player.vimeo.com/video/159974647" frameborder="0" allowfullscreen></iframe>
-
-
-<p><a href="https://vimeo.com/159974647">Mirrors of Grimaldi GDC Footage</a> from <a href="https://vimeo.com/51standfire">51st and Fire</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-</p>
-
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/159974647?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Mirrors of Grimaldi GDC Footage"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 **My Roles**:
 I primarily focused on developing an AI framework that allowed for utility-based decision making, but I also worked on all aspects of the enemies, including movement and path-finding, attacks and the attack system, perception and targeting. Outside of that, I developed various stencil shaders, interfaced many of the systems mentioned above to work with the player, and various major and minor bug fixes outside of the AI framework.
