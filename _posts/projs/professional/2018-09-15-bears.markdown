@@ -7,6 +7,7 @@ tag:
 - phl collective
 - c#
 - games
+- vr
 image: /assets/images/projs/bears/bears_cover.png
 logo: /assets/images/projs/bears/bears_logo.png
 headerImage: false
@@ -26,13 +27,9 @@ platform_links:
 
 
 ---
+**Food Truck Rush** is a multiplayer game based on the BAFTA award-winning and Emmy-nominated animated series We Bare Bears. In “We Bare Bears: Food Truck Rush,” 2-3 players take on the roles of the bear brothers and operate a food truck together. Their goal is to cook and serve food to as many customers as possible before time runs out while avoiding kitchen mishaps.
 
-**We Bare Bears: Food Truck Rush** 
-
+<iframe width="854" height="480" src="https://www.youtube.com/embed/oWpxnR0Q6Cs" title="We Bare Bares: Food Truck Rush preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **My Roles**:
 
-
----
-
-**Awards**:

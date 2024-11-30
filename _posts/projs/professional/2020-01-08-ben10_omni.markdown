@@ -7,6 +7,7 @@ tag:
 - phl collective
 - c#
 - games
+- vr
 image: /assets/images/projs/ben10_omni/ben10_omni_cover.png
 logo: /assets/images/projs/ben10_omni/ben10_omni_logo.png
 headerImage: false
@@ -25,9 +26,9 @@ platform_links:
   oculus rift: "https://www.cartoonnetworkhotel.com/"
 
 ---
+**Ben 10: Omni-Charged** is a 5-minute, 1-3 Player VR Cooperative Multiplayer game that puts players in a Powertrix suit armed with overpowered alien abilities. Suit up and save the city from Vilgax and his robotic army.
 
-**Ben 10: Omni-Charged** 
-
+<iframe width="854" height="480" src="https://www.youtube.com/embed/kPKqDdjl2iA" title="Ben 10 Omni Charged - Tráiler Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **My Roles**:
 

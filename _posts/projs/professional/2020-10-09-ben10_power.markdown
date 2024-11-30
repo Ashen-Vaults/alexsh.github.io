@@ -7,6 +7,7 @@ tag:
 - phl collective
 - c#
 - games
+- Open-World Adventure
 image: /assets/images/projs/ben10_power/ben10_power_cover.png
 logo: /assets/images/projs/ben10_power/ben10_power_logo.png
 headerImage: false
@@ -27,9 +28,9 @@ platform_links:
   steam: "https://store.steampowered.com/app/1063040/Ben_10_Power_Trip/"
 
 ---
+Ben and his family are enjoying their European vacation... until evil magician Hex unleashes the power of four mysterious crystals! Only **Ben 10** can break the curse - so get ready to transform into powerful aliens to battle enemies, solve puzzles and freely explore an exciting 3D world. It's hero time! With Gwen and Grandpa Max on your side, all the humor and rivalry from the Cartoon Network show is here. And since four arms are better than two, Kevin Levin is along for the adventure in local split-screen co-op. This is one Power Trip you'll want to take again and again. It's hero time!
 
-**Ben 10: Power Trip** 
-
+<iframe width="854" height="480" src="https://www.youtube.com/embed/CDPfDFeT5nc" title="Ben 10 POWER TRIP - Gameplay Trailer - PS4 / Xbox1 / PC / Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **My Roles**:
 
