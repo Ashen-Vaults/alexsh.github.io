@@ -33,11 +33,11 @@ title: Projects
 <br>
 <h1 style="text-align: center;">Personal</h1>
 <hr>
-<section class="project-elem-container">
+<section class="project-elem-container {% if site.animation %}animated{% endif %}">
     {% for post in site.posts %} {% if post.projects %}
     {% if post.projects and post.categories contains "personal" %}
     <div class="project-elem">
-        <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{% endif %}">
+        <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
             <div class="item {% if post.star %}star{% endif %}">
                 <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
                 <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this)">ℹ</button>
