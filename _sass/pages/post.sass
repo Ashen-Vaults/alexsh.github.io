@@ -1,10 +1,12 @@
 .post
     .header-post
         margin-top: $header-margin-top
-    
+   
         > .title
             text-align: center
+            font-size: 3.2rem
             margin-bottom: 3rem
+            color: $alpha
     
         > .date,
         > .post-tags
@@ -14,7 +16,7 @@
             text-transform: uppercase
             text-align: center
             display: block
-            margin-bottom: 6rem
+            margin-bottom: 2rem
             letter-spacing: 1px
             -webkit-font-smoothing: antialiased
             text-rendering: optimizeLegibility
@@ -34,9 +36,16 @@
             display: inline-block
             
         > .title-image
-            max-height: 120px
+            max-width: 425px
+            max-height: 250px
             display: block
-            margin: 0 auto
+            margin: 5px auto
+            padding: 10px
+            transition: transform 0.3s, opacity 0.3s
+
+    iframe
+        margin-top: 20px
+        margin-bottom: 20px
 
     // general style
     > h2,
@@ -48,6 +57,7 @@
             text-decoration: none
     
     .footer-post
+        margin-top: 20px
         > .blog-navigation
             font-size: 1.4rem
             display: block
@@ -58,6 +68,23 @@
                 width: 50%
                 float: left
                 margin: 1em 0
+                text-decoration: none
     
             .next
                 text-align: right
+
+     
+.container
+    border-top: 1px solid $epsilon
+    padding-top: 5px
+    width: 100%
+    overflow: hidden
+
+    .next
+        float: right
+        text-align: right
+        font-size: 1.2rem
+    .prev
+        text-align: left
+        float: left
+        font-size: 1.2rem

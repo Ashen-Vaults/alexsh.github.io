@@ -1,10 +1,11 @@
 .page
-    margin-top: 80px
+    margin-top: $header-margin-top
     @media #{$mobile}
         margin-top: 110px
     > h1
         text-align: center
         margin-bottom: 1rem
+
 ul, li
     padding: 0
     margin: 0
@@ -23,19 +24,31 @@ li
 hr
     border: none
     height: 1px
-    background-color: rgba($gama, 1.0)
+    background-color: rgba($epsilon, 1.0)
     margin: 15px 0
 
-.about
+.about 
     img
         margin: 0 auto
         display: block
         width: 250px
-        border: 3px solid $gama // Accent color
-        border-radius: 15px // Slight rounding
-        padding: 5px
+        border: 1px solid $epsilon // Accent color
+        border-radius: 5px // Slight rounding
+        padding: 0px
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
         transition: transform 0.3s, box-shadow 0.3s
+
+    table img
+        border: none
+        border-radius: 0px
+        padding: 0px
+        width: 25px !important
+        height: auto !important
+        margin-right: 0px !important
+        display: inline-block !important
+        vertical-align: middle !important
+        box-shadow: 0 0 0 0
+
         
     > h2
         margin: 0
@@ -51,6 +64,8 @@ table
     border-spacing: 0
     text-align: left
     margin-bottom: 10px 
+    font-size: 1.3rem
+    align-items: center
 
     th, td
         padding: 5px
@@ -60,10 +75,13 @@ table
     tr:first-child
         th
             border-bottom: 1px outset rgba($alpha, 0.1)
+    tr
+        &:hover
+            background-color: $go-top
+
     th
         font-weight: italic
-        text-align: left
-        color: $beta
+        color: $gama
 
     td:first-child
         color: $alpha
@@ -75,17 +93,77 @@ table
             font-weight: italic
             color: $delta
 
-    td:last-child
-        text-align: right
-        font-style: italic
+    th:nth-child(1), td:nth-child(1)
+        width: 55%
+
+    th:nth-child(2), td:nth-child(2)
+        width: 25%
+        
+    th:nth-child(3), td:nth-child(3)
+        width: 20%
+        align-items: center
+        text-align: center
+        a
+            transform: scale(1)
 
     td:has(a)
-        color: $delta
+        color: $delta !important
         a
-            color: inherit
-            transition: color 0.3s
+            color: inherit !important
+            transition: color 0.3s !important
             &:hover, &:focus
-                color: $gama
+                color: $gama !important
             &:active
-                color: $gama
+                color: $gama !important
 
+#toggle-section-btn
+    display: inline-block
+    position: relative
+    align-items: center
+    width: 100%
+    background:  $dark-hover
+    color: $delta
+    padding: 10px 20px 20px 20px
+    margin-bottom: 20px
+    border: none
+    border-radius: 8px
+    font-size: 16px
+    font-weight: bold
+    cursor: pointer
+    transition: all 0.3s ease-in-out
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+
+    &:hover
+        border: 2px solid $gama
+        background:  $go-top
+        border-radius: 16px
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3)
+        transform: scale(1.025)
+        color: $gama
+
+    &:active
+        background:  $go-top
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+        color: $gama
+
+#collapsible-section
+    border: 2px solid $gama
+    border-radius: 8px
+    padding-left: 10px
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    visibility: hidden
+    transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease
+    
+    &.visible
+        max-height: 500px
+        opacity: 1
+        visibility: visible
+
+p
+    line-height: 1.7
+    color: $alpha
+    font-weight: 300
+    margin-bottom: 0px
+    letter-spacing: 0.4px

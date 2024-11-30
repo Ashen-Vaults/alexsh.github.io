@@ -1,0 +1,36 @@
+---
+title: "SpongeBob SquarePants™: The Patrick Star Game"
+layout: post
+date: 2024-10-04 06:55
+tag: 
+- unity3d
+- phl collective
+- c#
+- games
+- Physics Sandbox
+image: /assets/images/projs/patrick/patrick_cover.png
+logo: /assets/images/projs/patrick/patrick_logo.png
+headerImage: false
+projects: true
+hidden: false # don't count this post in blog pagination
+description:
+category: project
+author: alexsh
+externalLink: false
+platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
+role: Lead Platform Programmer
+categories: professional
+studio: PHL Collective
+platform_links:
+  ps: "https://store.playstation.com/en-us/concept/10007960"
+  xbox: "https://www.xbox.com/en-us/games/store/spongebob-squarepants-the-patrick-star-game/9nmf3kxt4p4g"
+  switch: "https://www.nintendo.com/us/store/products/spongebob-squarepants-the-patrick-star-game-switch/"
+  steam: "https://store.steampowered.com/app/2322380/SpongeBob_SquarePants_The_Patrick_Star_Game/"
+
+---
+**Patrick** fans, your time has come – and Bikini Bottom is your open-world playground! You can skydive with just a parasol (or nothing at all), search for buried treasure in the Dump, or release the rage in Mrs. Puff’s Rage Room. Use almost any item you find, - from the reef blower to a paint can, - to make the world more Patrick. And take on challenges only Patrick would attempt, set by up SpongeBob, Sandy Cheeks, Mr. Krabs, and more. So become the Star of the show, put your silliest ideas into action, and enjoy the physics-based chaos that unfolds all around you!
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/5IMfRxbkIxM" title="SpongeBob Squarepants ™: The Patrick Star Game – Announcement Trailer – Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+**My Roles**:
