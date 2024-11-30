@@ -8,6 +8,7 @@ tag:
 - c#
 - games
 - vr
+
 image: /assets/images/projs/bears/bears_cover.png
 logo: /assets/images/projs/bears/bears_logo.png
 headerImage: false
