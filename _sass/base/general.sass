@@ -33,25 +33,23 @@ h1, h2, h3, h4
     margin-bottom: 10px
 
 h1
-    font-size: 4.5rem
-    letter-spacing: -1px
-    font-weight: 700
-    
+    font-size: clamp(3rem, 5vw, 6rem)
+
 h2
-    font-size: 2.2rem
+    font-size: clamp(2.5rem, 4vw, 5rem)
 
 h3
-    font-size: 2rem
+    font-size: clamp(2rem, 3vw, 4rem)
 
 h4
-    font-size: 2.6rem
+    font-size: clamp(1.5rem, 2.5vw, 3rem)
     color: $alpha
 
 h6
-    font-size: 1.5rem
+    font-size: clamp(1rem, 2vw, 2.5rem)
     margin-bottom: 10px
     color: $beta
-    
+
 a
     color: $delta
     text-decoration: none
@@ -83,7 +81,7 @@ ul, ol
 
     strong
         color: $gama
-
+        font-weight: 400
 
 // Image and Figure Styles
 img, pre, iframe
@@ -149,7 +147,7 @@ pre
     margin: 0 auto
 
 .wrapper-normal
-    max-width: 720px
+    max-width: 768px
 
 .wrapper-large
     max-width: 1200px // Set max-width to 1200px for a balanced layout
