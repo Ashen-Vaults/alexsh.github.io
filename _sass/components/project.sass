@@ -1,32 +1,42 @@
 .project-elem-container
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
-    gap: 20px
+    gap: 20px // Set equal spacing between grid items
     justify-items: center
-    direction: ltr
+    align-items: start
     margin-top: 40px
 
+    @media (max-width: 768px)
+        grid-template-columns: 1fr
+
 .project-elem
-    display: inline-block
+    display: flex
+    flex-direction: column
     text-align: center
     position: relative
     z-index: 99
-    padding: 5px
-    direction: ltr
-    width: 400px
-    height: 300px
-  
+    width: auto
+    height: auto
+
+    @media (max-width: 768px)
+        width: auto // Allow width to scale to container for smaller screens
+        height: auto // Height should adjust accordingly
 
     > .link > .item
         position: relative
+        width: auto
+        height: auto
 
         > .selfie
-            width: 100%
+            width: auto
+            max-width: 350px
             height: auto
-            object-fit: fill
+            object-fit: cover
             border: 1px solid $epsilon
             border-radius: 5px
             padding: 0px
+            margin: 0 auto
+
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
             transition: transform 0.3s, box-shadow 0.3s
 
@@ -37,13 +47,14 @@
 
         > .toggle-info
             position: absolute
-            bottom: 10px
-            right: 10px
+            z-index: 1000
+            bottom: 5%
+            right: 5%
             width: 35px
             height: 35px
             background: $epsilon
             color: white
-            font-size: 18px
+            font-size: 0.8em
             font-weight: italic
             border: 1px solid $beta
             border-radius: 100%
@@ -59,7 +70,6 @@
                 transform: scale(1.1)
                 box-shadow: 0 0 8px $gama
 
-            // Display only on mobile
             @media (max-width: 768px)
                 display: flex
 
@@ -76,18 +86,19 @@
             align-items: center
             opacity: 0
             transition: opacity 0.3s
-            border-radius: 5px
+            border-radius: inherit
+            z-index: 100 // Lower z-index than .toggle-info
 
             > .project-info
                 text-align: center
-                padding: 1em // Relative padding
+                padding: 1em
 
                 > .title
                     font-weight: bold
                     font-size: 1.2em
                     overflow: hidden
                     text-overflow: ellipsis
-                    white-space: wrapper
+                    white-space: nowrap
                     width: 100%
                     box-sizing: border-box
 
@@ -110,3 +121,49 @@
 
     > .link > .title
         font-weight: 100
+
+.project-info
+    max-width: 100%
+    font-size: clamp(1rem, 2.5vw, 1.5rem)
+    color: $text-color
+    margin-top: 1rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    word-wrap: break-word
+
+    > .title
+        font-size: clamp(1.2rem, 3vw, 2rem)
+        font-weight: bold
+        color: $delta
+        max-width: 100%
+    
+    > .role
+        font-size: clamp(1rem, 2.5vw, 1.5rem)
+        color: $gama
+        margin-top: 0.5rem
+        max-width: 100%
+
+    > .release-date, > .platforms, > .studio
+        font-size: clamp(1rem, 2.5vw, 1.5rem)
+        color: $alpha
+        margin-top: 0.5rem
+        max-width: 100%
+
+.overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.7)
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transition: opacity 0.3s
+
+    &.single-item
+        max-width: 350px
+        margin: 0 auto

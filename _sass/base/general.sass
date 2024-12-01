@@ -47,6 +47,11 @@ h4
     font-size: 2.6rem
     color: $alpha
 
+h6
+    font-size: 1.5rem
+    margin-bottom: 10px
+    color: $beta
+    
 a
     color: $delta
     text-decoration: none
@@ -83,6 +88,8 @@ ul, ol
 // Image and Figure Styles
 img, pre, iframe
     max-width: 100%
+    display: block
+    margin: 0 auto
 
 img, pre
     border-radius: 4px
@@ -142,10 +149,16 @@ pre
     margin: 0 auto
 
 .wrapper-normal
-    max-width: 560px
+    max-width: 720px
 
 .wrapper-large
-    max-width: 810px
+    max-width: 1200px // Set max-width to 1200px for a balanced layout
+
+// Specific max-width for the selfie image on the home page
+.selfie-home
+    max-width: 300px // Set the desired max-width for the selfie image
+    margin: 0 auto
+    display: block
 
 // Media Queries
 @media #{$mobile}
@@ -205,3 +218,40 @@ pre
         width: 40px
         height: 40px
         font-size: 1.2rem
+
+.project-elem-container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    gap: 20px // Set equal spacing between grid items
+    justify-items: center
+    align-items: start // Ensure items start at the top of the grid cell
+    margin-top: 40px
+
+    @media (max-width: 768px)
+        grid-template-columns: 1fr
+
+.project-elem
+    display: flex
+    flex-direction: column
+    text-align: center
+    position: relative
+    z-index: 99
+    width: 100% // Ensure the item takes the full width of the grid cell
+    height: auto
+
+    @media (max-width: 768px)
+        width: 100% // Allow width to scale to container for smaller screens
+        height: auto // Height should adjust accordingly
+
+    > .link > .item
+        position: relative
+        width: 100%
+        height: 100%
+
+        > .selfie
+            width: 100%
+            height: auto
+            object-fit: cover
+            border: 1px solid $epsilon
+            border-radius: 5px
+            padding: 0px
