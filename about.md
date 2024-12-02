@@ -4,7 +4,8 @@ layout: page
 ---
 <!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/) with over six years of experience in the video game industry. I specialize in cross-platform development, build pipeline automation, and performance optimization, but I’m always eager to tackle new challenges that contribute to a project’s success.
+Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
+
 
 <br>
 I’ve worn many hats as a software engineer, embracing diverse aspects of game development to move a project forward. Whether it's rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I thrive on solving complex technical problems.
@@ -202,6 +203,11 @@ function toggleSection() {
 
 
 </script>
+
+## Experience
+- **Lead Platform Programmer**: PHL Collective \| 2021 - Present \| Remote
+- **Gameplay Programmer**: PHL Collective \| 2018 - 2021 \| Philadelphia, PA (Remote 2020-2021)
+- **Gameplay Programmer**: Skyless Game Studios \| 2016 - 2018 \| Philadelphia, PA
 
 ## Skills
 - **Languages**: C#, C, C++, Python, Groovy, HLSL, SQL
