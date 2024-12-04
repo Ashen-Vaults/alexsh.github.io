@@ -3,17 +3,33 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    scrollbar-width: thin
+    scrollbar-color: $go-top $dark-hover
 
 html, body
     font-size: 60.5% // 1rem = 10px for easier scaling
-    -ms-overflow-style: none // IE and Edge
-    scrollbar-width: none // Firefox
     height: 100%
     margin: 0
     padding: 0
 
     &::-webkit-scrollbar
-        display: none
+        width: 8px
+        height: 8px
+
+    &::-webkit-scrollbar-track
+        background: $dark-hover
+        border-radius: 10px
+
+    &::-webkit-scrollbar-thumb
+        background: $go-top
+        border-radius: 10px
+
+    &::-webkit-scrollbar-thumb:hover
+        background: darken($go-top, 10%)
+
+    @media (max-width: 768px)
+        &::-webkit-scrollbar
+            display: none
 
 // Typography
 body
@@ -292,3 +308,19 @@ pre
             border: 1px solid $epsilon
             border-radius: 5px
             padding: 0px
+
+/* Modern sleek scrollbar styles */
+::-webkit-scrollbar
+    width: 8px
+    height: 8px
+
+::-webkit-scrollbar-track
+    background: $dark-hover
+    border-radius: 10px
+
+::-webkit-scrollbar-thumb
+    background: $delta
+    border-radius: 10px
+
+::-webkit-scrollbar-thumb:hover
+    background: $delta
