@@ -12,7 +12,9 @@ title: Projects
         <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
             <div class="item {% if post.star %}star{% endif %}">
                 <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
-                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this, event)">ℹ</button>
+                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this, event)">
+                    <svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg>
+                </button>
                 <div class="overlay">
                     <div class="project-info">
                         <h3 class="title">{{ post.title }}</h3>
@@ -40,7 +42,9 @@ title: Projects
         <a class="link" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
             <div class="item {% if post.star %}star{% endif %}">
                 <img class="selfie" src="{{ post.image }}" alt="{{ post.title }}">
-                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this, event)">ℹ</button>
+                <button class="toggle-info" aria-label="View Information" onclick="toggleInfo(this, event)">
+                    <svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg>
+                </button>
                 <div class="overlay">
                     <div class="project-info">
                         <h3 class="title">{{ post.title }}</h3>

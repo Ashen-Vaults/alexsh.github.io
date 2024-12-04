@@ -50,26 +50,35 @@
             z-index: 1000
             bottom: 5%
             right: 5%
-            width: 45px
-            height: 45px 
-            background: $dark-hover
-            color: white
-            font-size: 1em
+            width: 35px
+            height: 35px
+            font-size: 1.2em
             font-weight: italic
-            border: 1px solid $beta
-            border-radius: 100%
+            border: none
+            border-radius: 50%
             display: none
             justify-content: center
             align-items: center
             cursor: pointer
+            background: rgba(0, 0, 0, 0.7) // Match the overlay background color
             transition: background 0.3s, transform 0.3s, box-shadow 0.3s
+            transform: scale(1.1)
 
             &:hover
                 background: $go-top
-                transform: scale(1.1)
+                transform: scale(1.2)
 
             @media (max-width: 768px)
                 display: flex
+
+        .icon-info
+            width: 24px
+            height: 24px
+            fill: $delta
+            background: none // Remove background color
+
+            &:hover
+                fill: $gama
 
         > .overlay
             position: absolute
@@ -85,7 +94,7 @@
             opacity: 0
             transition: opacity 0.3s
             border-radius: inherit
-            z-index: 100 // Lower z-index than .toggle-info
+            z-index: 100
 
             > .project-info
                 text-align: center
