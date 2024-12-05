@@ -13,7 +13,7 @@ logo: /assets/images/projs/patrick/patrick_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description:
+description: "Step into Patrick’s shorts and create hilarious, physics-based mayhem, as you make the open world of Bikini Bottom your playground!"
 category: project
 author: alexsh
 externalLink: false

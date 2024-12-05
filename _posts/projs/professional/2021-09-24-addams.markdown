@@ -13,7 +13,7 @@ logo: /assets/images/projs/addams/addams_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description: 
+description: "Help Wednesday, Pugsley, Gomez, and Morticia save the Addams Family Mansion in this hilarious 3D party adventure."
 category: project
 author: alexsh
 externalLink: false

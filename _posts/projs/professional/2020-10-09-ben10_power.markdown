@@ -13,7 +13,7 @@ logo: /assets/images/projs/ben10_power/ben10_power_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description: 
+description: "Evil Hex has cursed Europe – and only Ben 10 can stop him! Explore a 3D world filled with combat, puzzles and secrets as you save the day!"
 category: project
 author: alexsh
 externalLink: false
@@ -33,5 +33,9 @@ Ben and his family are enjoying their European vacation... until evil magician H
 <iframe width="854" height="480" src="https://www.youtube.com/embed/CDPfDFeT5nc" title="Ben 10 POWER TRIP - Gameplay Trailer - PS4 / Xbox1 / PC / Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **My Roles**:
-
+<ul>
+  <li>Provided hands-on support for platform feature integration and compliance testing.</li>
+  <li>Assisted senior programmers with debugging and performance tuning for [platforms].</li>
+  <li>Gained experience in platform-specific development tools and workflows, contributing to successful project deployment.</li>
+</ul>
 ---

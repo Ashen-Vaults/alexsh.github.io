@@ -14,7 +14,7 @@ logo: /assets/images/projs/goozy/goozy_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description: 
+description: "Step into the world of Goozy and prepare for an out of this world adventure!​"
 category: project
 author: alexsh
 externalLink: false

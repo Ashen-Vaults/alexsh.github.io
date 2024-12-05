@@ -13,7 +13,7 @@ logo: /assets/images/projs/cosmic/cosmic_logo.png
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
-description: 
+description: "Suit up as Batman, Wonder Woman and Superman and take on some of the most powerful Super-Villains in the DC universe with DC’s Justice League: Cosmic Chaos."
 category: project
 author: alexsh
 externalLink: false
