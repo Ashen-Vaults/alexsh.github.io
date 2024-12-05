@@ -1,6 +1,6 @@
 .project-elem-container
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
     gap: 20px 
     justify-items: center
     align-items: start
@@ -57,28 +57,6 @@
             border: none
             border-radius: 50%
             display: none
-            justify-content: center
-            align-items: center
-            cursor: pointer
-            background: rgba(0, 0, 0, 0.7) // Match the overlay background color
-            transition: background 0.3s, transform 0.3s, box-shadow 0.3s
-            transform: scale(1.1)
-
-            &:hover
-                background: $go-top
-                transform: scale(1.2)
-
-            @media (max-width: 768px)
-                display: flex
-
-        .icon-info
-            width: 24px
-            height: 24px
-            fill: $delta
-            background: none // Remove background color
-
-            &:hover
-                fill: $gama
 
         > .overlay
             position: absolute
@@ -87,37 +65,34 @@
             width: 100%
             height: 100%
             background: rgba(0, 0, 0, 0.7)
-            color: white
             display: flex
             justify-content: center
             align-items: center
             opacity: 0
             transition: opacity 0.3s
-            border-radius: inherit
-            z-index: 100
 
             > .project-info
                 text-align: center
                 padding: 1em
+                font-size: 1rem !important // Base font size
+                width: 90% !important // Ensure it fits within the image bounds
+                max-width: 90% !important // Ensure it fits within the image bounds
+                word-wrap: break-word !important // Ensure long words break to fit within the bounds
+                line-height: 1.5 !important // Adjust line height for better readability
+                display: flex !important
+                flex-direction: column !important
+                justify-content: center !important
+                align-items: center !important
 
-            > .title
-                font-size: clamp(1.2rem, 3vw, 2rem)
-                font-weight: bold
-                color: $delta
-                max-width: 100%
-            
-            > .role
-                font-size: clamp(1rem, 2.5vw, 2.5rem)
-                color: $gama
-                font-weight: bold
-                margin-top: 0.5rem
-                max-width: 100%
+                @media (max-width: 768px)
+                    font-size: 0.8rem !important // Adjust font size for smaller screens
 
-            > .release-date, > .platforms, > .studio
-                font-size: clamp(1rem, 2.5vw, 1.5rem)
-                color: $alpha
-                margin-top: 0.5rem
-                max-width: 100%
+                @media (max-width: 768px)
+                    font-size: 0.8rem // Adjust font size for smaller screens
+
+            &.single-item
+                max-width: 350px
+                margin: 0 auto
 
     &:hover > .link > .item > .overlay
         opacity: 1
