@@ -49,7 +49,7 @@ This was our senior project at Drexel University, a top ten school for game desi
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tc7AbJmcaMo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </p>
 
-For more information about the game, or to download our latest playable build, please visit us at 
+For more information about the game, or to download our latest playable build, please visit us at: 
 
 [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=697493532)
 
