@@ -3,6 +3,13 @@ layout: page
 title: Projects
 ---
 
+<!-- Preload Images -->
+{% for post in site.posts %}
+  {% if post.projects %}
+    <link rel="preload" href="{{ post.image }}" as="image">
+  {% endif %}
+{% endfor %}
+
 <h1 style="text-align: center;">Professional</h1>
 <hr>
 <section class="project-elem-container {% if site.animation %}animated{% endif %}">
@@ -62,14 +69,48 @@ title: Projects
 </section>
 
 <script>
+  let activeButton = null;
+  let activeOverlay = null;
+
   function toggleInfo(button, event) {
     event.preventDefault();
     event.stopPropagation();
     const overlay = button.nextElementSibling;
-    if (overlay.style.display === "block") {
-      overlay.style.display = "none";
-    } else {
-      overlay.style.display = "block";
+
+    if (activeButton === button) {
+      activeButton.classList.remove('active');
+      activeOverlay.classList.remove('active');
+      activeButton = null;
+      activeOverlay = null;
+      return;
     }
+
+    if (activeButton && activeButton !== button) {
+      activeButton.classList.remove('active');
+      activeOverlay.classList.remove('active');
+    }
+
+    button.classList.add('active');
+    overlay.classList.add('active');
+ 
+    activeButton = button;
+    activeOverlay = overlay;
+
+    document.addEventListener('click', function handleClickOutside(event) {
+      if (activeButton && !button.contains(event.target) && !overlay.contains(event.target)) {
+        activeButton.classList.remove('active');
+        activeOverlay.classList.remove('active');
+        activeButton = null;
+        activeOverlay = null;
+        document.removeEventListener('click', handleClickOutside);
+      }
+    });
   }
+
+  document.querySelectorAll('.toggle-info').forEach(button => {
+    button.addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+    });
+  });
 </script>

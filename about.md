@@ -3,6 +3,16 @@ title: About
 layout: page
 ---
 <!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
+<link rel="preload" href="/assets/images/platform_icons/steam-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/ps-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/xbox-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/switch-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/pc-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/ios-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/android-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/htc-vive-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/oculus-rift-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/itch-icon.png" as="image">
 
 Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
 
@@ -11,7 +21,6 @@ I’ve worn many hats as a software engineer, embracing diverse aspects of game 
 
 
 Throughout my career, I’ve collaborated closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship nine titles across multiple platforms. Each project presented unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a key role in their successful launches.
-
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by crafting engaging experiences, overcoming technical challenges, and collaborating with talented teams to create fun, memorable games.
 
@@ -50,38 +59,38 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
       return platformIcons[platform] || null;
     }
 
-    function renderPlatformIcons(platformsString, platformLinks, containerId) {
-      const platforms = platformsString.split(", ").map(platform => platform.trim().toLowerCase());
-      const uniquePlatforms = [...new Set(platforms.map(platform => {
-        if (platform === "ps4" || platform === "ps5") return "PS";
-        if (platform === "xbox one" || platform === "xbox series x") return "Xbox";
-        return platform.charAt(0).toUpperCase() + platform.slice(1);
-      }))];
-      
-      const container = document.getElementById(containerId);
-      container.style.display = "flex";
-      container.style.justifyContent = "center";
-      container.style.alignItems = "center";
-      uniquePlatforms.forEach(platform => {
-        const platformlink_lowercase = platform.toLowerCase();
-        const iconPath = getPlatformIcon(platformlink_lowercase);
-        const platformLink = platformLinks[platformlink_lowercase];
-        if (iconPath && platformLink) {
-          const a = document.createElement("a");
-          a.href = platformLink;
-          a.target = "_blank";
-          a.className = "platform-icon-link";
-          const img = document.createElement("img");
-          img.src = iconPath;
-          img.alt = platform;
-          img.style.width = "30px";
-          img.style.height = "30px";
-          img.style.margin = "0 5px";
-          a.appendChild(img);
-          container.appendChild(a);
-        }
-      });
-    }
+  function renderPlatformIcons(platformsString, platformLinks, containerId) {
+    const platforms = platformsString.split(", ").map(p => p.trim().toLowerCase());
+    const uniquePlatforms = [...new Set(platforms.map(platform => {
+      if (platform === "ps4" || platform === "ps5") return "ps";
+      if (platform === "xbox one" || platform === "xbox series x") return "xbox";
+      return platform;
+    }))];
+
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    uniquePlatforms.forEach(platform => {
+      const iconPath = getPlatformIcon(platform);
+      const platformLink = platformLinks[platform];
+      if (iconPath && platformLink) {
+        const a = document.createElement("a");
+        a.href = platformLink;
+        a.target = "_blank";
+        a.className = "platform-icon-link";
+        
+        const img = new Image();
+        img.src = iconPath;
+        img.alt = platform;
+        img.width = 30;
+        img.height = 30;
+        img.style.margin = "0 5px";
+
+        a.appendChild(img);
+        container.appendChild(a);
+      }
+    });
+  }
   </script>
 
   <h2>Professional</h2>
@@ -163,41 +172,19 @@ function toggleWithDisplay() {
   }
 }
 function toggleSection() {
-    const section = document.getElementById("collapsible-section");
-    const icon = document.getElementById("toggle-icon");
+  const section = document.getElementById("collapsible-section");
+  const icon = document.getElementById("toggle-icon");
 
-    if (!section) return;
+  if (!section) return;
 
-    const animationDuration = 500;
-    const viewportCenter = window.innerHeight / 2;
-    const startScroll = window.scrollY;
-    const startTime = performance.now();
+  const isVisible = section.classList.contains("visible");
+  section.classList.toggle("visible", !isVisible);
 
-    function animateScroll() {
-        const currentTime = performance.now();
-        const elapsedTime = currentTime - startTime;
-        const progress = Math.min(elapsedTime / animationDuration, 1);
+  icon.textContent = isVisible ? "▼" : "▲";
 
-        const sectionRect = section.getBoundingClientRect();
-        const sectionCenter = sectionRect.top + sectionRect.height / 2 + window.scrollY;
-        const scrollOffset = sectionCenter - viewportCenter;
-
-        const currentScroll = startScroll + (scrollOffset - startScroll) * progress;
-        window.scrollTo(0, currentScroll);
-
-        if (progress < 1) {
-            requestAnimationFrame(animateScroll);
-        }
-    }
-
-    const isVisible = section.classList.contains("visible");
-    section.classList.toggle("visible", !isVisible);
-
-    icon.textContent = isVisible ? "▼" : "▲";
-
-    requestAnimationFrame(() => {
-        animateScroll();
-    });
+  if (!isVisible) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 
