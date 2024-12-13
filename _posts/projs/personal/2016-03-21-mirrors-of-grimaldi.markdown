@@ -37,7 +37,7 @@ platform_links:
 
 **My Roles**:
 
-I primarily focused on developing an AI framework for utility-based decision making. Additionally, I worked on various aspects of enemy behavior, including movement and path-finding, attack mechanics, and perception and targeting systems. Beyond AI, I developed stencil shaders, integrated these systems to interact with the player, and addressed numerous major and minor bug fixes.
+As one of three programmers, I primarily focused on developing an AI framework for utility-based decision making. Additionally, I worked on various aspects of enemy behavior, including movement and path-finding, attack mechanics, and perception and targeting systems. Beyond AI, I developed stencil shaders, integrated these systems to interact with the player, and fixed numerous high priority bugs.
 
 ---
 
