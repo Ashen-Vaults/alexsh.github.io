@@ -31,8 +31,10 @@ Suit up as super-dogs **Krypto and Ace** to uncover Lex Luthor’s plot to pet-n
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/35nFRrZXZGk" title="DC League of Super-Pets: The Adventures of Krypto and Ace - Launch Trailer - Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+**My Roles as {{ page.role }}**:
 
-
-**My Roles**:
-
----
+- Managed a team of 2 programmers
+- Improved load times by converting the project to use addressables
+- Improved the in-house platform library that handles platform features such as achievements, game suspension, user management, input, and audio integration with FMOD, in addition to ensuring the game ran on all platforms
+- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
+- Handled all patches, including gameplay fixes, post-release

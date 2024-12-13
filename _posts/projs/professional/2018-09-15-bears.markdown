@@ -32,5 +32,6 @@ platform_links:
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/oWpxnR0Q6Cs" title="We Bare Bares: Food Truck Rush preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**My Roles**:
+**My Roles as {{ page.role }}**:
 
+- Worked on the patch for this project, primarily fixing bugs and working on gameplay enhancements

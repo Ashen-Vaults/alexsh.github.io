@@ -35,9 +35,14 @@ platform_links:
 
 <div style="position:relative;"><iframe src="https://player.vimeo.com/video/159974647?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:relative;top:0;left:0;width:100%;height:100%;" title="Mirrors of Grimaldi GDC Footage"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-**My Roles**:
+**My Roles as {{ page.role }}**:
 
-As one of three programmers, I primarily focused on developing an AI framework for utility-based decision making. Additionally, I worked on various aspects of enemy behavior, including movement and path-finding, attack mechanics, and perception and targeting systems. Beyond AI, I developed stencil shaders, integrated these systems to interact with the player, and fixed numerous high priority bugs.
+- Focused on developing an AI framework for utility-based decision making as one of three programmers
+- Worked on various aspects of enemy behavior, including movement and path-finding, attack mechanics, and perception and targeting systems
+- Developed stencil shaders
+- Integrated these systems to interact with the player
+- Fixed numerous high priority bugs
+- Worked on the game design and mechanics
 
 ---
 

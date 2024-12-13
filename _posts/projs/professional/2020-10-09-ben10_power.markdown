@@ -32,10 +32,9 @@ Ben and his family are enjoying their European vacation... until evil magician H
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/CDPfDFeT5nc" title="Ben 10 POWER TRIP - Gameplay Trailer - PS4 / Xbox1 / PC / Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**My Roles**:
-<ul>
-  <li>Provided hands-on support for platform feature integration and compliance testing.</li>
-  <li>Assisted senior programmers with debugging and performance tuning for [platforms].</li>
-  <li>Gained experience in platform-specific development tools and workflows, contributing to successful project deployment.</li>
-</ul>
----
+**My Roles as {{ page.role }}**:
+
+- Served as the sole platform programmer for this project, acting as an in-house port team during development
+- Created a library to handle platform features such as achievements, game suspension, user management, input, and audio integration with FMOD, in addition to getting the game running on all platforms
+- Ensured the game met each platform's unique technical requirements to pass certification.
+- Managed all patches, including gameplay fixes, post-release

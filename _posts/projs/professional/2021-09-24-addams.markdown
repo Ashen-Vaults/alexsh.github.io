@@ -32,7 +32,8 @@ They're creepy and kooky, and their home is in danger! Only you and your friends
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/WxEOJ4NkX7A" title="The Addams Family: Mansion Mayhem – Launch Trailer – Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**My Roles**:
+**My Roles as {{ page.role }}**:
 
-
----
+- Managed a team of 2 programmers
+- Created a library to handle platform features such as achievements, game suspension, user management, input, and audio integration with FMOD, in addition to getting the game running on all platforms
+- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
