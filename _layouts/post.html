@@ -9,14 +9,38 @@ layout: page
 
 <h1 class="title">{{ page.title }}</h1>
 
-{% if page.description %}
-    <h6 class="description text-center">{{ page.description }}</h6>
-{% endif %}
+<style>
+    .header-post .title {
+        margin-bottom: 1px;
+    }
+    .post-details p {
+        margin-bottom: 1px;
+    }
+</style>
 
-<span class="date">
-    <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
-    {% if site.read-time %} - {% include read-time.html %}{% endif %}
-</span>
+<section class="post-details">
+    {% if page.studio %}
+        {% assign studio_key = page.studio | downcase | replace: " ", "_" %}
+        {% assign studio_link = site.studio_links[studio_key] %}
+        {% if studio_link %}
+            <p><strong>Studio:</strong> <a href="{{ studio_link }}" target="_blank">{{ page.studio }}</a></p>
+        {% else %}
+            <p><strong>Studio:</strong> {{ page.studio }}</p>
+        {% endif %}
+    {% endif %}
+    {% if page.role %}
+        <p><strong>Role:</strong> {{ page.role }}</p>
+    {% endif %}
+    {% if page.date %}
+        <p><strong>Released:</strong> <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time></p>
+    {% endif %}
+    {% if page.platforms %}
+        <p><strong>Platforms:</strong> {{ page.platforms }}</p>
+    {% endif %}
+    {% if site.read-time %}
+        <p>{% include read-time.html %}</p>
+    {% endif %}
+</section>
 
 {% if site.show-tags %}
     <div class="post-tags">
@@ -25,29 +49,31 @@ layout: page
         {% endfor %}
     </div>
 {% endif %}
-
+{% if page.description %}
+    <h6 class="description text-center">{{ page.description }}</h6>
+{% endif %}
 </header>
 
 <section class="post-content">
-{{content}}
+    {{ content }}
 </section>
 
+<!-- Include platform icons -->
 {% include platform-icons.html %}
 
 <footer class="footer-post">
-  
-        <div class="blog-navigation">
-            {% if page.previous.url %}
-                <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
-            {% else %}
-                <a class="prev"></a>
-            {% endif %}
-            {% if page.next.url %}
-                <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
-            {% else %}
-                <a class="next"></a>
-            {% endif %}
-        </div>
+    <div class="blog-navigation">
+        {% if page.previous.url %}
+            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+        {% else %}
+            <a class="prev"></a>
+        {% endif %}
+        {% if page.next.url %}
+            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+        {% else %}
+            <a class="next"></a>
+        {% endif %}
+    </div>
     
     {% if site.related contains page.category %}
         {% include related.html %}
@@ -60,5 +86,4 @@ layout: page
     {% if site.disqus.categories contains page.category %}
         {% include disqus.html %}
     {% endif %}
-
 </footer>
