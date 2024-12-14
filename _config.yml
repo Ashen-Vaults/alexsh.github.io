@@ -126,6 +126,6 @@ platform_icons:
   oculus_rift: "/assets/images/platform_icons/oculus-rift-icon.png"
   itch: "/assets/images/platform_icons/itch-icon.png"
 
-  studio_links:
-    phl_collective: "https://www.phlcollective.com/"
-    aspyr: "https://www.aspyr.com/"
+studio_links:
+  phl_collective: "https://www.phlcollective.com/"
+  aspyr: "https://www.aspyr.com/"
