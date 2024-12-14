@@ -38,3 +38,4 @@ Explore a house full of weird technology and slimy surprises as you attempt to s
 - Configured an EC2 instance on AWS to handle 1 million unique codes generated with Python, which were distributed with physical toys available in department stores
 - Using AWS Lambda, created a REST API in JavaScript to claim codes within the game, unlocking in-game rewards based on code rarity
 - Took on porting the project to PC after the project surpassed a million downloads on both the Google Play Store and App Store, which involved creating a library to convert mobile touch inputs into mouse and gamepad controls
+- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
