@@ -35,8 +35,8 @@ Unite against chaos in an all-new adventure where the **Justice League** goes he
 **My Roles as {{ page.role }}**:
 
 - Managed a team of 2 programmers
-- Rewrote the in-house platform library to use assembly definitions
+- Rewrote the in-house C# platform library to use assembly definitions
 - Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
 - Fixed high priority bugs and created patches for post-release
-- Developed a distributed build pipeline for CI/CD using AWS EC2, Jenkins, Python, and Groovy
+- Designed and maintained a distributed CI/CD build pipeline using Jenkins, AWS, Parsec, Docker, Python, and Groovy, resulting in significantly reduced build times and improved development efficiency
 - Designed and Prototyped enemies

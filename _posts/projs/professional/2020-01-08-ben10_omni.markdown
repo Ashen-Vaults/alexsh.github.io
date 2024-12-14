@@ -33,7 +33,7 @@ platform_links:
 **My Roles as {{ page.role }}**:
 
 - Developed and implemented player attack systems
-- Designed and programmed enemy behaviors
+- Designed and programmed enemy attacks
 - Integrated audio using FMOD
 - Set up inverse kinematics for player avatars
 - Created context-responsive avatar facial animations

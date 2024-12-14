@@ -36,7 +36,7 @@ platform_links:
 **My Roles as {{ page.role }}**:
 
 - Managed a team of 2 programmers
-- Improved the in-house platform library that handles platform features such as achievements, game suspension, user management, input, and audio integration with FMOD, ensuring the game ran on all platforms
+- Improved the in-house C# platform library that handles platform features such as achievements, game suspension, user management, input, saving, and audio integration with FMOD, ensuring the game ran on all platforms
 - Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
 - Fixed high priority bugs and created patches for post-release
 - Improved the in-house distributed build pipeline for CI/CD using AWS EC2, Jenkins, Python, and Groovy
