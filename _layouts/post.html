@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<header class="header-post">
+<header class="header-post animated fadeIn">
 
 {% if page.image %}
     <img class="title-image" src="{{ site.url }}{{ page.logo }}" alt="{{ page.title }}">
@@ -54,14 +54,14 @@ layout: page
 {% endif %}
 </header>
 
-<section class="post-content">
+<section class="post-content animated fadeIn">
     {{ content }}
 </section>
 
 <!-- Include platform icons -->
 {% include platform-icons.html %}
 
-<footer class="footer-post">
+<footer class="footer-post animated fadeIn">
     <div class="blog-navigation">
         {% if page.previous.url %}
             <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
