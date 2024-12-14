@@ -7,7 +7,6 @@ layout: page
 <link rel="preload" href="/assets/images/platform_icons/ps-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/xbox-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/switch-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/pc-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/ios-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/android-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/htc-vive-icon.png" as="image">
@@ -49,7 +48,6 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
         "ps": "/assets/images/platform_icons/ps-icon.png",
         "xbox": "/assets/images/platform_icons/xbox-icon.png",
         "switch": "/assets/images/platform_icons/switch-icon.png",
-        "pc": "/assets/images/platform_icons/pc-icon.png",
         "ios": "/assets/images/platform_icons/ios-icon.png",
         "android": "/assets/images/platform_icons/android-icon.png",
         "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
