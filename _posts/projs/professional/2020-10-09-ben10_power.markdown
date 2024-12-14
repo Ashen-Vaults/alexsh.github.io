@@ -35,6 +35,6 @@ Ben and his family are enjoying their European vacation... until evil magician H
 **My Roles as {{ page.role }}**:
 
 - Served as the sole platform programmer for this project, acting as an in-house port team during development
-- Created a library to handle platform features such as achievements, game suspension, user management, input, and audio integration with FMOD, in addition to getting the game running on all platforms
+- Created a C# library to handle platform features such as saving, achievements, game suspension, user management, input, and audio integration with FMOD, in addition to getting the game running on all platforms
 - Ensured the game met each platform's unique technical requirements to pass certification.
 - Managed all patches, including gameplay fixes, post-release
