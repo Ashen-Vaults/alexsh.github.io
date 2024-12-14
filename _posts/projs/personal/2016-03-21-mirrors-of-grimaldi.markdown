@@ -37,11 +37,11 @@ platform_links:
 
 **My Roles as {{ page.role }}**:
 
-- Developed AI framework using utility-based decision making for enemy AI
-- Worked on various aspects of enemy behavior, including movement, path-finding, attack mechanics, and perception, and targeting systems
+- Developed utility-based decision making framework for enemy AI
+- Worked on various aspects of enemy behavior, including movement, path-finding, attack mechanics, perception, and targeting systems
 - Wrote multiple shaders, including stencil shaders for revealing players hidden behind the environment
 - Fixed numerous high priority bugs
-- Worked on the game design and mechanics
+- Worked on the game design and gameplay mechanics
 
 ---
 
