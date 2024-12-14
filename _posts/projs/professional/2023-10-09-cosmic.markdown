@@ -39,3 +39,4 @@ Unite against chaos in an all-new adventure where the **Justice League** goes he
 - Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
 - Fixed high priority bugs and created patches for post-release
 - Developed a distributed build pipeline for CI/CD using AWS EC2, Jenkins, Python, and Groovy
+- Designed and Prototyped enemies

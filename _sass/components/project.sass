@@ -1,3 +1,5 @@
+$mobile-breakpoint: 768px
+
 .project-elem-container
     display: grid
     grid-template-columns: repeat(auto-fill, 350px)
@@ -114,11 +116,11 @@
                 max-width: 350px
                 margin: 0 auto
 
-    &:hover > .link > .item > .overlay,
-    .link > .item > .overlay.active
-        opacity: 1
-        box-shadow: 0 0 1px $gama, 0 0 5px $gama
-        border: 2px solid $gama
+    @media (min-width: 768px)
+        &:hover > .link > .item > .overlay
+            opacity: 1
+            box-shadow: 0 0 1px $gama, 0 0 5px $gama
+            border: 2px solid $gama
 
     > .link > .title
         font-weight: 100
@@ -152,3 +154,15 @@
         color: $alpha
         margin-top: 0.5rem
         max-width: 100%
+
+.parent
+    @media (min-width: $mobile-breakpoint)
+        &:hover > .link > .item > .overlay
+            opacity: 1
+            box-shadow: 0 0 1px $gama, 0 0 5px $gama
+            border: 2px solid $gama
+
+    .link > .item > .overlay.active
+        opacity: 1
+        box-shadow: 0 0 1px $gama, 0 0 5px $gama
+        border: 2px solid $gama
