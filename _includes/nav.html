@@ -1,41 +1,14 @@
-<nav class="{% if page.title == "Home" %}nav{% else %}nav{% endif %}">
+<nav class="nav">
     <ul class="list">
-        {% if page.title != "Home" %}
-  
-        {% endif %}
-
-        {% if site.blog == true %}
-            {% if page.title != "Blog" %}
-   
-            {% endif %}
-        {% endif %}       
-
-        {% if site.projects == true %}
-            {% if page.title != "Portfolio" %}
-
-            {% endif %}
-        {% endif %}
-
-        {% if site.about == true %}
-            {% if page.title != "About" %}
-
-            {% endif %}
-        {% endif %}
-
         <li class="item">
             <a class="link {% if page.title == 'Home' %}active{% endif %}" href="{{ site.url }}/">Home</a>
         </li>
         <li class="item">
             <a class="link {% if page.title == 'About' %}active{% endif %}" href="{{ site.url }}/about">About</a>
         </li>
-        <!-- <li class="item">
-            <a class="link {% if page.title == 'Blog' %}active{% endif %}" href="{{ site.url }}/blog">Blog</a>
-        </li> -->
         <li class="item">
             <a class="link {% if page.title == 'Projects' %}active{% endif %}" href="{{ site.url }}/projects">Portfolio</a>
         </li>
-
-
         {% if site.resume == true %}
             <li class="item">
                 <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}" target="_blank">Resume</a>
