@@ -1,0 +1,23 @@
+{% assign platforms = page.platforms | split: ", " %}
+<div class="platform-icons">
+  {% assign rendered_platforms = "" %}
+  {% for platform in platforms %}
+    {% assign platform_key = platform | downcase | replace: " ", "_" %}
+    {% if platform_key == "ps4" or platform_key == "ps5" %}
+      {% assign platform_key = "ps" %}
+    {% elsif platform_key == "xbox_one" or platform_key == "xbox_series_x" %}
+      {% assign platform_key = "xbox" %}
+    {% endif %}
+    {% unless rendered_platforms contains platform_key %}
+      {% assign icon_path = site.platform_icons[platform_key] %}
+      {% assign platform_link = page.platform_links[platform_key] %}
+      {% if icon_path and platform_link %}
+        <link rel="preload" href="{{ icon_path }}" as="image">
+        <a href="{{ platform_link }}" target="_blank">
+          <img src="{{ icon_path }}" alt="{{ platform }}" title="{{ platform }}" class="platform-icon">
+        </a>
+        {% assign rendered_platforms = rendered_platforms | append: platform_key | append: "," %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+</div>

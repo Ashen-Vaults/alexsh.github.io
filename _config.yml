@@ -112,3 +112,16 @@ plugins_dir:
 
 jekyll-mentions:
     base_url: https://github.com
+
+
+platform_icons:
+  steam: "/assets/images/platform_icons/steam-icon.png"
+  ps: "/assets/images/platform_icons/ps-icon.png"
+  xbox: "/assets/images/platform_icons/xbox-icon.png"
+  switch: "/assets/images/platform_icons/switch-icon.png"
+  pc: "/assets/images/platform_icons/pc-icon.png"
+  ios: "/assets/images/platform_icons/ios-icon.png"
+  android: "/assets/images/platform_icons/android-icon.png"
+  htc_vive: "/assets/images/platform_icons/htc-vive-icon.png"
+  oculus_rift: "/assets/images/platform_icons/oculus-rift-icon.png"
+  itch: "/assets/images/platform_icons/itch-icon.png"
