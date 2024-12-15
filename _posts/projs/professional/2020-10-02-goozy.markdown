@@ -32,6 +32,7 @@ Explore a house full of weird technology and slimy surprises as you attempt to s
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/eAzt-PUG524" title="Goozy Presented by FGTeeV | Gameplay Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<section id="my-roles"></section>
 **My Roles as {{ page.role }}**:
 
 - Handled all platform programming and build pipeline automation for iOS and Android

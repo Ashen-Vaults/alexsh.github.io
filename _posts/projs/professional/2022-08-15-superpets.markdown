@@ -31,6 +31,7 @@ Suit up as super-dogs **Krypto and Ace** to uncover Lex Luthor’s plot to pet-n
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/35nFRrZXZGk" title="DC League of Super-Pets: The Adventures of Krypto and Ace - Launch Trailer - Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<section id="my-roles"></section>
 **My Roles as {{ page.role }}**:
 
 - Managed a team of 2 programmers

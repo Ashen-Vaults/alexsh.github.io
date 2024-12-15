@@ -33,6 +33,7 @@ platform_links:
 <iframe width="854" height="480" src="https://www.youtube.com/embed/5IMfRxbkIxM" title="SpongeBob Squarepants ™: The Patrick Star Game – Announcement Trailer – Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
+<section id="my-roles"></section>
 **My Roles as {{ page.role }}**:
 
 - Managed a team of 2 programmers

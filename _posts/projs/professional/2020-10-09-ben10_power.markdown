@@ -32,6 +32,7 @@ Ben and his family are enjoying their European vacation... until evil magician H
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/CDPfDFeT5nc" title="Ben 10 POWER TRIP - Gameplay Trailer - PS4 / Xbox1 / PC / Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<section id="my-roles"></section>
 **My Roles as {{ page.role }}**:
 
 - Served as the sole platform programmer for this project, acting as an in-house port team during development
