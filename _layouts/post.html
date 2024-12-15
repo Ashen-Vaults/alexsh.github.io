@@ -47,6 +47,9 @@ layout: page
 </style>
 
 <section class="post-details">
+    {% if page.engine %}
+    <p><strong>Engine:</strong> {{ page.engine }}</p>
+    {% endif %}
     {% if page.studio %}
         {% assign studio_key = page.studio | downcase | replace: " ", "_" %}
         {% assign studio_link = site.studio_links[studio_key] %}
@@ -58,9 +61,6 @@ layout: page
     {% endif %}
     {% if page.role %}
         <p><strong>Role:</strong> <a href="#my-roles">{{ page.role }}</a></p>
-    {% endif %}
-    {% if page.engine %}
-        <p><strong>Engine:</strong> {{ page.engine }}</p>
     {% endif %}
     {% if page.date %}
         <p><strong>Released:</strong> <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time></p>
