@@ -3,6 +3,7 @@ title: "Winning 1st Place In Gameplay at the Intel University Games Showcase (GD
 layout: post
 date: 2016-03-21 22:44
 image: /assets/images/mog/MogLogoFull.png
+logo: /assets/images/mog/MogLogoFull.png
 headerImage: false
 tag:
 - unity3d
