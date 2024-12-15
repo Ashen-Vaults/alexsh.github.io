@@ -18,29 +18,30 @@ layout: page
     }
     .nav-area {
         position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 20%;
-        height: 100px;
+        top: 0;
+        bottom: 0;
+        width: 25px;
         z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         cursor: pointer;
-        font-size: 3rem;
-        color: $gama;
-        opacity: 0.5;
-        transition: opacity 0.3s, color 0.3s;
+        background-color: transparent;
+        transition: background-color 0.3s, background 0.3s; 
     }
     .nav-area:hover {
         opacity: 1;
-        color: $delta;
     }
     .nav-left {
         left: 0;
     }
+    .nav-left:hover {
+        background: linear-gradient(to left, rgba(30, 30, 30, 1), rgba(255, 121, 198, 1));
+        transition: background-color 0.3s, background 0.3s; 
+    }
     .nav-right {
         right: 0;
+    }
+    .nav-right:hover {
+        background: linear-gradient(to right, rgba(30, 30, 30, 1), rgba(255, 121, 198, 1));
+        transition: background-color 0.3s, background 0.3s; 
     }
 </style>
 
@@ -116,10 +117,10 @@ layout: page
 
 <!-- Add clickable areas for navigation -->
 {% if page.previous.url %}
-    <div class="nav-area nav-left" onclick="navigateTo('prev')">&lt;</div>
+    <div class="nav-area nav-left" onclick="navigateTo('prev')"></div>
 {% endif %}
 {% if page.next.url %}
-    <div class="nav-area nav-right" onclick="navigateTo('next')">&gt;</div>
+    <div class="nav-area nav-right" onclick="navigateTo('next')"></div>
 {% endif %}
 
 <script>
