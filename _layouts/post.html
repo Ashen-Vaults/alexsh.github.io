@@ -16,6 +16,32 @@ layout: page
     .post-details p {
         margin-bottom: 1px;
     }
+    .nav-area {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20%;
+        height: 100px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 3rem;
+        color: $gama;
+        opacity: 0.5;
+        transition: opacity 0.3s, color 0.3s;
+    }
+    .nav-area:hover {
+        opacity: 1;
+        color: $delta;
+    }
+    .nav-left {
+        left: 0;
+    }
+    .nav-right {
+        right: 0;
+    }
 </style>
 
 <section class="post-details">
@@ -54,14 +80,14 @@ layout: page
 {% endif %}
 </header>
 
-<section class="post-content animated fadeIn">
+<section class="post-content">
     {{ content }}
 </section>
 
 <!-- Include platform icons -->
 {% include platform-icons.html %}
 
-<footer class="footer-post animated fadeIn">
+<footer class="footer-post">
     <div class="blog-navigation">
         {% if page.previous.url %}
             <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
@@ -87,3 +113,25 @@ layout: page
         {% include disqus.html %}
     {% endif %}
 </footer>
+
+<!-- Add clickable areas for navigation -->
+{% if page.previous.url %}
+    <div class="nav-area nav-left" onclick="navigateTo('prev')">&lt;</div>
+{% endif %}
+{% if page.next.url %}
+    <div class="nav-area nav-right" onclick="navigateTo('next')">&gt;</div>
+{% endif %}
+
+<script>
+function navigateTo(direction) {
+    if (direction === 'prev') {
+        {% if page.previous.url %}
+            window.location.href = "{{ site.url }}{{ page.previous.url }}";
+        {% endif %}
+    } else if (direction === 'next') {
+        {% if page.next.url %}
+            window.location.href = "{{ site.url }}{{ page.next.url }}";
+        {% endif %}
+    }
+}
+</script>
