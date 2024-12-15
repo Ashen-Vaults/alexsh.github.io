@@ -22,6 +22,7 @@ platforms: iOS, Android, Steam
 role: Platform Programmer
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   ios: "https://goozygame.com/"
   android: "https://goozygame.com/"

@@ -21,6 +21,7 @@ platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
 role: Platform Programmer
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   ps: "https://store.playstation.com/en-us/product/UP3824-PPSA08358_00-6955715158927034"
   xbox: "https://www.xbox.com/en-us/games/store/ben-10-power-trip/9njwff2khl6h"

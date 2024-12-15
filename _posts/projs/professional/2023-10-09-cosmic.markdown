@@ -21,6 +21,7 @@ platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
 role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   ps: "https://store.playstation.com/en-us/product/UP3824-PPSA08422_00-JUSTICEBASEGAME1"
   xbox: "https://www.xbox.com/en-us/games/store/dcs-justice-league-cosmic-chaos/9nm1cjpxhc8k"

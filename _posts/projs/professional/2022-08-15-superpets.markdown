@@ -21,6 +21,7 @@ platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
 role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   ps: "https://store.playstation.com/en-us/product/UP3824-PPSA07079_00-SUPERPETSGAME001"
   xbox: "https://www.xbox.com/en-us/games/store/dc-league-of-super-pets-the-adventures-of-krypto-and-ace/9np1g0t8jdmr"

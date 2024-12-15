@@ -21,6 +21,7 @@ platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
 role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   ps: "https://store.playstation.com/en-us/product/UP3824-CUSA25060_00-ADDAMSBASEGAME01"
   xbox: "https://www.xbox.com/en-us/games/store/the-addams-family-mansion-mayhem/9nk9lwx511gx?activetab=pivot:overviewtab"

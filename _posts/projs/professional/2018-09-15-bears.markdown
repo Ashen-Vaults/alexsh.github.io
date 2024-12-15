@@ -22,6 +22,7 @@ platforms: HTC Vive, Oculus Rift
 role: Additional Programming
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   htc vive: "https://www.cartoonnetworkhotel.com/"
   oculus rift: "https://www.cartoonnetworkhotel.com/"

@@ -21,6 +21,7 @@ platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam
 role: Lead Platform Programmer
 categories: professional
 studio: PHL Collective
+engine: Unity
 platform_links:
   ps: "https://store.playstation.com/en-us/concept/10007960"
   xbox: "https://www.xbox.com/en-us/games/store/spongebob-squarepants-the-patrick-star-game/9nmf3kxt4p4g"
