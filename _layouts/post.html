@@ -60,8 +60,24 @@ layout: page
         {% endif %}
     {% endif %}
     {% if page.role %}
-        <p><strong>Role:</strong> <a href="#my-roles">{{ page.role }}</a></p>
+      <p><strong>Role:</strong> <a href="#my-roles" class="scroll-link">{{ page.role }}</a></p>
     {% endif %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.scroll-link').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+
     {% if page.date %}
         <p><strong>Released:</strong> <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time></p>
     {% endif %}
