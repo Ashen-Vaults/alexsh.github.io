@@ -1,9 +1,12 @@
 $mobile-breakpoint: 768px
 
+h1
+    font-size: clamp(2rem, 3vw, 4.8rem)
+
 .project-elem-container
     display: grid
     grid-template-columns: repeat(auto-fill, 350px)
-    gap: 20px
+    gap: 1px
     justify-content: center
     align-items: start
     margin-top: 40px
@@ -17,13 +20,13 @@ $mobile-breakpoint: 768px
 .project-elem
     width: 350px
     margin: 0 
-
     display: flex
     flex-direction: column
     text-align: center
     position: relative
     z-index: 99
     height: auto
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2)
 
     @media (max-width: 768px)
         width: 100%
@@ -43,7 +46,6 @@ $mobile-breakpoint: 768px
             border-radius: 5px
             padding: 0
             margin: 0 auto
-
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
             transition: transform 0.3s, box-shadow 0.3s
 
