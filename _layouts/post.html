@@ -190,4 +190,41 @@ function navigateTo(direction) {
         {% endif %}
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navWrappers = document.querySelectorAll('.nav-area-wrapper');
+    navWrappers.forEach(wrapper => {
+        let isMobile = /Mobi|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            wrapper.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.classList.contains('active')) {
+                    if (this.classList.contains('nav-left')) {
+                        navigateTo('prev');
+                    } else if (this.classList.contains('nav-right')) {
+                        navigateTo('next');
+                    }
+                } else {
+                    this.classList.add('active');
+                }
+            });
+        } else {
+            wrapper.addEventListener('click', function() {
+                if (this.classList.contains('nav-left')) {
+                    navigateTo('prev');
+                } else if (this.classList.contains('nav-right')) {
+                    navigateTo('next');
+                }
+            });
+        }
+    });
+
+    document.addEventListener('click', function(e) {
+        navWrappers.forEach(wrapper => {
+            if (!wrapper.contains(e.target)) {
+                wrapper.classList.remove('active');
+            }
+        });
+    });
+});
 </script>
