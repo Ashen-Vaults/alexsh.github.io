@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-<!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
+
 <link rel="preload" href="/assets/images/platform_icons/steam-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/ps-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/xbox-icon.png" as="image">
@@ -13,17 +13,21 @@ layout: page
 <link rel="preload" href="/assets/images/platform_icons/oculus-rift-icon.png" as="image">
 <link rel="preload" href="/assets/images/platform_icons/itch-icon.png" as="image">
 
+<!-- <div class="profile-image-wrapper">
+  <img src="{{ site.url }}/{{ site.picturecats }}" alt="Profile Image">
+  <div class="tooltip">My cats, Ascii and Hex</div>
+</div> -->
+
 Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
 
 
 I’ve worn many hats as a software engineer, embracing diverse aspects of game development to move a project forward. Whether it's rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I thrive on solving complex technical problems.
 
-
 Throughout my career, I’ve collaborated closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship {% assign professional_projects = site.posts | where: "categories", "professional" | size %}{{ professional_projects }} titles across multiple platforms. Each project presented unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a key role in their successful launches.
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by crafting engaging experiences, overcoming technical challenges, and collaborating with talented teams to create fun, memorable games.
 
-##### Interested in learning more? Expand the portfolio breakdown below or check out the full [Portfolio](/projects/).
+###### Interested in learning more? Expand the portfolio breakdown below or check out the full [Portfolio](/projects/).
 
 <br>
 <button id="toggle-section-btn" onclick="toggleSection()">

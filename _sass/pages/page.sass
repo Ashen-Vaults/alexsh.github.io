@@ -183,3 +183,45 @@ p
         height: 30px
         margin: 0 5px
         transition: transform 0.3s
+
+.profile-image-wrapper
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    margin: 0 auto
+    margin-bottom: 10px
+
+.profile-image-wrapper img
+    display: block
+    margin: 0 auto
+
+.profile-image-wrapper .tooltip
+    visibility: hidden
+    width: 100px
+    background-color: $go-top
+    color: $gama
+    text-align: center
+    padding: 5px 5px
+    border-radius: 6px
+    position: absolute
+    z-index: 1
+    top: 50%
+    transform: translateY(-100%)
+    opacity: 0
+    transition: opacity 0.3s
+
+.profile-image-wrapper .tooltip::after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    border-width: 5px
+    border-style: solid
+    border-color: transparent $go-top transparent transparent
+
+.profile-image-wrapper img:hover + .tooltip
+    visibility: visible
+    opacity: 1

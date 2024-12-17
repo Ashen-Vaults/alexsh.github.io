@@ -69,7 +69,7 @@ h1
             justify-content: center
             align-items: center
             cursor: pointer
-            background: rgba(0, 0, 0, 0.7)
+            background: rgba(0, 0, 0, 0.8)
             color: white
             transition: background 0.3s, color 0.3s
 
@@ -86,7 +86,7 @@ h1
             left: 0
             width: 100%
             height: 100%
-            background: rgba(0, 0, 0, 0.7)
+            background: rgba(0, 0, 0, 0.8)
             display: flex
             justify-content: center
             align-items: center
@@ -126,6 +126,7 @@ h1
 
     > .link > .title
         font-weight: 100
+        color: $subtitle
 
 .project-info
     max-width: 100%
@@ -141,21 +142,22 @@ h1
     > .title
         font-size: clamp(1.2rem, 3vw, 2rem)
         font-weight: bold
-        color: $delta
+        color: $subtitle
         max-width: 100%
 
     > .role
         font-size: clamp(1rem, 2.5vw, 1.5rem)
         color: $gama
-        margin-top: 0.5rem
+        margin-top: 0.1rem
         max-width: 100%
         font-weight: bold
 
     > .release-date, > .platforms, > .studio
         font-size: clamp(1rem, 2.5vw, 1.5rem)
         color: $alpha
-        margin-top: 0.5rem
+        margin-top: 0.1rem
         max-width: 100%
+    
 
 .parent
     @media (min-width: $mobile-breakpoint)
