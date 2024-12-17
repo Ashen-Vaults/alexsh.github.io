@@ -18,23 +18,27 @@ layout: page
     }
     .nav-area {
         position: fixed;
-        top: 0;
-        bottom: 0;
+        top: 50%;
+        bottom: 50%;
         width: 2px;
         z-index: 1000;
         background: rgba(255, 121, 198, 1);
         transition: width 0.3s ease-in-out, background-color 0.3s;
+        animation: grow-vertical 1s forwards;
     }
     .nav-area-wrapper {
         position: fixed;
         top: 0;
         bottom: 0;
-        width: 40px;
+        width: 60px;
         z-index: 999;
         cursor: pointer;
     }
-    .nav-area-wrapper:hover .nav-area {
-        width: 35px;
+    .nav-area-wrapper.disable-hover .nav-area {
+        pointer-events: none;
+    }
+    .nav-area-wrapper.enable-hover:hover .nav-area {
+        width: 55px;
         background-color: rgba(80, 250, 123);
     }
     .nav-area-wrapper.nav-left {
@@ -49,12 +53,12 @@ layout: page
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 35px;
+        font-size: 45px;
         color: #1E1E1E;
         opacity: 0;
         transition: opacity 0.3s ease-in-out 0s;
     }
-    .nav-area-wrapper.nav-left:hover .nav-left::after {
+    .nav-area-wrapper.nav-left.enable-hover:hover .nav-left::after {
         opacity: 1;
     }
     .nav-area-wrapper.nav-right {
@@ -69,13 +73,23 @@ layout: page
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
-        font-size: 35px;
+        font-size: 45px;
         color: #1E1E1E;
         opacity: 0;
         transition: opacity 0.3s ease-in-out 0s;
     }
-    .nav-area-wrapper.nav-right:hover .nav-right::after {
+    .nav-area-wrapper.nav-right.enable-hover:hover .nav-right::after {
         opacity: 1;
+    }
+    @keyframes grow-vertical {
+        0% {
+            top: 50%;
+            bottom: 50%;
+        }
+        100% {
+            top: 0;
+            bottom: 0;
+        }
     }
 </style>
 
@@ -224,6 +238,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!wrapper.contains(e.target)) {
                 wrapper.classList.remove('active');
             }
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var navAreaWrappers = document.querySelectorAll('.nav-area-wrapper');
+    navAreaWrappers.forEach(function(wrapper) {
+        wrapper.classList.add('disable-hover');
+        wrapper.querySelector('.nav-area').addEventListener('animationend', function() {
+            wrapper.classList.remove('disable-hover');
+            wrapper.classList.add('enable-hover');
         });
     });
 });
