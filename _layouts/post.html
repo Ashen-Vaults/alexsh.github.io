@@ -20,29 +20,62 @@ layout: page
         position: fixed;
         top: 0;
         bottom: 0;
-        width: 25px;
+        width: 2px;
         z-index: 1000;
+        background: rgba(255, 121, 198, 1);
+        transition: width 0.3s ease-in-out, background-color 0.3s;
+    }
+    .nav-area-wrapper {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        z-index: 999;
         cursor: pointer;
-        background-color: transparent;
-        transition: background-color 0.3s, background 0.3s; 
     }
-    .nav-area:hover {
-        opacity: 1;
-        transition: background-color 0.3s ease-in-out;
+    .nav-area-wrapper:hover .nav-area {
+        width: 35px;
+        background-color: rgba(80, 250, 123);
     }
-    .nav-left {
+    .nav-area-wrapper.nav-left {
         left: 0;
     }
-    .nav-left:hover {
-        background: linear-gradient(to left, rgba(30, 30, 30, 1), rgba(255, 121, 198, 1));
-        transition: background 0.3s ease-in-out;
+    .nav-area.nav-left {
+        left: 0;
     }
-    .nav-right {
+    .nav-left::after {
+        content: "<";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out 0.3s;
+    }
+    .nav-area-wrapper.nav-left:hover .nav-left::after {
+        opacity: 1;
+    }
+    .nav-area-wrapper.nav-right {
         right: 0;
     }
-    .nav-right:hover {
-        background: linear-gradient(to right, rgba(30, 30, 30, 1), rgba(255, 121, 198, 1));
-        transition: background 0.3s ease-in-out;
+    .nav-area.nav-right {
+        right: 0;
+    }
+    .nav-right::after {
+        content: ">";
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        font-size: 35px;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out 0.3s; /* Delay to match bar expansion */
+    }
+    .nav-area-wrapper.nav-right:hover .nav-right::after {
+        opacity: 1;
     }
 </style>
 
@@ -105,7 +138,6 @@ layout: page
     {{ content }}
 </section>
 
-<!-- Include platform icons -->
 {% include platform-icons.html %}
 
 <footer class="footer-post">
@@ -135,12 +167,15 @@ layout: page
     {% endif %}
 </footer>
 
-<!-- Add clickable areas for navigation -->
 {% if page.previous.url %}
-    <div class="nav-area nav-left" onclick="navigateTo('prev')"></div>
+    <div class="nav-area-wrapper nav-left" onclick="navigateTo('prev')">
+        <div class="nav-area nav-left"></div>
+    </div>
 {% endif %}
 {% if page.next.url %}
-    <div class="nav-area nav-right" onclick="navigateTo('next')"></div>
+    <div class="nav-area-wrapper nav-right" onclick="navigateTo('next')">
+        <div class="nav-area nav-right"></div>
+    </div>
 {% endif %}
 
 <script>
