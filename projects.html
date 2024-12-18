@@ -42,6 +42,7 @@ title: Projects
 <br>
 <h1 style="text-align: center;">Personal</h1>
 <hr>
+<div class="project-container"></div>
 <section class="project-elem-container {% if site.animation %}animated{% endif %}">
     {% for post in site.posts %} {% if post.projects %}
     {% if post.projects and post.categories contains "personal" %}
@@ -67,6 +68,7 @@ title: Projects
     {% endif %}
     {% endif %} {% endfor %}
 </section>
+</div>
 
 <script>
   let activeButton = null;
@@ -112,5 +114,9 @@ title: Projects
       event.preventDefault();
       event.stopPropagation();
     });
+  });
+
+  window.addEventListener('load', function() {
+    document.querySelector('.project-container').style.visibility = 'visible';
   });
 </script>
