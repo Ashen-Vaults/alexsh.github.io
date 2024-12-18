@@ -8,9 +8,9 @@ description: The personal website of Alexsh
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
-picture2: assets/images/profile2.jpg
-picturecats: assets/images/profile_cats.jpg
+picture: assets/images/profile.webp
+picture2: assets/images/profile2.webp
+picturecats: assets/images/profile_cats.webp
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -116,16 +116,16 @@ jekyll-mentions:
 
 
 platform_icons:
-  steam: "/assets/images/platform_icons/steam-icon.png"
-  ps: "/assets/images/platform_icons/ps-icon.png"
-  xbox: "/assets/images/platform_icons/xbox-icon.png"
-  switch: "/assets/images/platform_icons/switch-icon.png"
-  pc: "/assets/images/platform_icons/pc-icon.png"
-  ios: "/assets/images/platform_icons/ios-icon.png"
-  android: "/assets/images/platform_icons/android-icon.png"
-  htc_vive: "/assets/images/platform_icons/htc-vive-icon.png"
-  oculus_rift: "/assets/images/platform_icons/oculus-rift-icon.png"
-  itch: "/assets/images/platform_icons/itch-icon.png"
+  steam: "/assets/images/platform_icons/steam-icon.webp"
+  ps: "/assets/images/platform_icons/ps-icon.webp"
+  xbox: "/assets/images/platform_icons/xbox-icon.webp"
+  switch: "/assets/images/platform_icons/switch-icon.webp"
+  pc: "/assets/images/platform_icons/pc-icon.webp"
+  ios: "/assets/images/platform_icons/ios-icon.webp"
+  android: "/assets/images/platform_icons/android-icon.webp"
+  htc_vive: "/assets/images/platform_icons/htc-vive-icon.webp"
+  oculus_rift: "/assets/images/platform_icons/oculus-rift-icon.webp"
+  itch: "/assets/images/platform_icons/itch-icon.webp"
 
 studio_links:
   phl_collective: "https://www.phlcollective.com/"

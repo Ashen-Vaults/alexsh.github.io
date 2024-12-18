@@ -11,8 +11,8 @@ tag:
 - ai
 - games
 - gdc
-image: /assets/images/mog/mog_concept.jpg
-logo: /assets/images/mog/MogLogoFull.png
+image: /assets/images/mog/mog_concept.webp
+logo: /assets/images/mog/MogLogoFull.webp
 headerImage: false
 hidden: false
 description: "A local, competitive multiplayer game that takes the concept of split-screen and turns it into an integral game mechanic"
@@ -30,7 +30,7 @@ platform_links:
 **Mirrors of Grimaldi** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.
 
 
-![Conceptual Art](/assets/images/mog/mog_concept.jpg)
+![Conceptual Art](/assets/images/mog/mog_concept.webp)
 
 **Split-screen** is at the forefront of Mirrors of Grimaldi and how players interact with our dynamically changing split-screen will determine who is victorious in this competitive multiplayer experience. The Player main weapon is the ability to punch minions into enemy players screens, who will then target and attack your opponents instead of you. With thrilling and strategic gameplay, Mirrors of Grimaldi brings a fresh new face to local multiplayer that will keep hardcore and casual gamers alike asking for another rematch.
 

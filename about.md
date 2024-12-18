@@ -3,15 +3,15 @@ title: About
 layout: page
 ---
 
-<link rel="preload" href="/assets/images/platform_icons/steam-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/ps-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/xbox-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/switch-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/ios-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/android-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/htc-vive-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/oculus-rift-icon.png" as="image">
-<link rel="preload" href="/assets/images/platform_icons/itch-icon.png" as="image">
+<link rel="preload" href="/assets/images/platform_icons/steam-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/ps-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/xbox-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/switch-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/ios-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/android-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/htc-vive-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/oculus-rift-icon.webp" as="image">
+<link rel="preload" href="/assets/images/platform_icons/itch-icon.webp" as="image">
 
 <!-- <div class="profile-image-wrapper">
   <img src="{{ site.url }}/{{ site.picturecats }}" alt="Profile Image">
@@ -48,15 +48,15 @@ As I continue to grow, I’m excited to bring my experience and passion to futur
   <script>
     function getPlatformIcon(platform) {
       const platformIcons = {
-        "steam": "/assets/images/platform_icons/steam-icon.png",
-        "ps": "/assets/images/platform_icons/ps-icon.png",
-        "xbox": "/assets/images/platform_icons/xbox-icon.png",
-        "switch": "/assets/images/platform_icons/switch-icon.png",
-        "ios": "/assets/images/platform_icons/ios-icon.png",
-        "android": "/assets/images/platform_icons/android-icon.png",
-        "htc vive": "/assets/images/platform_icons/htc-vive-icon.png",
-        "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.png",
-        "itch": "/assets/images/platform_icons/itch-icon.png"
+        "steam": "/assets/images/platform_icons/steam-icon.webp",
+        "ps": "/assets/images/platform_icons/ps-icon.webp",
+        "xbox": "/assets/images/platform_icons/xbox-icon.webp",
+        "switch": "/assets/images/platform_icons/switch-icon.webp",
+        "ios": "/assets/images/platform_icons/ios-icon.webp",
+        "android": "/assets/images/platform_icons/android-icon.webp",
+        "htc vive": "/assets/images/platform_icons/htc-vive-icon.webp",
+        "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.webp",
+        "itch": "/assets/images/platform_icons/itch-icon.webp"
       };
       return platformIcons[platform] || null;
     }

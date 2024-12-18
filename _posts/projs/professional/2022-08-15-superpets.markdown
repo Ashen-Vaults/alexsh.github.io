@@ -8,8 +8,8 @@ tag:
 - c#
 - games
 - Rail Shooter
-image: /assets/images/projs/superpets/superpets_cover.png
-logo: /assets/images/projs/superpets/superpets_logo.png
+image: /assets/images/projs/superpets/superpets_cover.webp
+logo: /assets/images/projs/superpets/superpets_logo.webp
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination

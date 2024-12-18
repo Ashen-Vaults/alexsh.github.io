@@ -9,8 +9,8 @@ tag:
 - games
 - vr
 
-image: /assets/images/projs/bears/bears_cover.png
-logo: /assets/images/projs/bears/bears_logo.png
+image: /assets/images/projs/bears/bears_cover.webp
+logo: /assets/images/projs/bears/bears_logo.webp
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination

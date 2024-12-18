@@ -2,8 +2,8 @@
 title: "Winning 1st Place In Gameplay at the Intel University Games Showcase (GDC 2016)"
 layout: post
 date: 2016-03-21 22:44
-image: /assets/images/mog/MogLogoFull.png
-logo: /assets/images/mog/MogLogoFull.png
+image: /assets/images/mog/MogLogoFull.webp
+logo: /assets/images/mog/MogLogoFull.webp
 headerImage: false
 tag:
 - unity3d
@@ -14,7 +14,7 @@ author: alexsh
 description: We won! (GDC 2016)
 ---
 
-![Taking Home the Tropy! GDC - 2016](/assets/images/mog/gdc_winning.jpg)
+![Taking Home the Tropy! GDC - 2016](/assets/images/mog/gdc_winning.webp)
 
 ---
 

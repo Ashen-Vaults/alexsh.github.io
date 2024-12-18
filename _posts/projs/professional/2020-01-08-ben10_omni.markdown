@@ -8,8 +8,8 @@ tag:
 - c#
 - games
 - vr
-image: /assets/images/projs/ben10_omni/ben10_omni_cover.png
-logo: /assets/images/projs/ben10_omni/ben10_omni_logo.png
+image: /assets/images/projs/ben10_omni/ben10_omni_cover.webp
+logo: /assets/images/projs/ben10_omni/ben10_omni_logo.webp
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination

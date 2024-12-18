@@ -9,8 +9,8 @@ tag:
 - games
 - horror
 - mobile
-image: /assets/images/projs/goozy/goozy_cover.png
-logo: /assets/images/projs/goozy/goozy_logo.png
+image: /assets/images/projs/goozy/goozy_cover.webp
+logo: /assets/images/projs/goozy/goozy_logo.webp
 headerImage: false
 projects: true
 hidden: false # don't count this post in blog pagination
