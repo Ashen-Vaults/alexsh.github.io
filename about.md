@@ -17,7 +17,7 @@ layout: page
   <img src="{{ site.url }}/{{ site.picturecats }}" alt="Profile Image">
   <div class="tooltip">My cats, Ascii and Hex</div>
 </div> -->
-<br>
+
 Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
 
 
