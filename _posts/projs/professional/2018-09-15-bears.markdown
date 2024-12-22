@@ -26,8 +26,7 @@ engine: Unity
 platform_links:
   htc vive: "https://www.cartoonnetworkhotel.com/"
   oculus rift: "https://www.cartoonnetworkhotel.com/"
-
-
+duration: ~1 year
 ---
 **Food Truck Rush** is a multiplayer game based on the BAFTA award-winning and Emmy-nominated animated series We Bare Bears. In “We Bare Bears: Food Truck Rush,” 2-3 players take on the roles of the bear brothers and operate a food truck together. Their goal is to cook and serve food to as many customers as possible before time runs out while avoiding kitchen mishaps.
 

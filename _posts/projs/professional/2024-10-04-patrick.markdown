@@ -27,7 +27,7 @@ platform_links:
   xbox: "https://www.xbox.com/en-us/games/store/spongebob-squarepants-the-patrick-star-game/9nmf3kxt4p4g"
   switch: "https://www.nintendo.com/us/store/products/spongebob-squarepants-the-patrick-star-game-switch/"
   steam: "https://store.steampowered.com/app/2322380/SpongeBob_SquarePants_The_Patrick_Star_Game/"
-
+duration: ~2 years
 ---
 **Patrick** fans, your time has come – and Bikini Bottom is your open-world playground! You can skydive with just a parasol (or nothing at all), search for buried treasure in the Dump, or release the rage in Mrs. Puff’s Rage Room. Use almost any item you find, - from the reef blower to a paint can, - to make the world more Patrick. And take on challenges only Patrick would attempt, set by up SpongeBob, Sandy Cheeks, Mr. Krabs, and more. So become the Star of the show, put your silliest ideas into action, and enjoy the physics-based chaos that unfolds all around you!
 
@@ -39,6 +39,6 @@ platform_links:
 
 - Managed a team of 2 programmers
 - Improved the in-house C# platform library that handles saving, achievements, game suspension, user management, input, audio integration with FMOD, and platform specific features, ensuring the game ran on all platforms
-- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
+- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements (XR's, Lotcheck, and TRC's)
 - Fixed high priority bugs and created patches for post-release
 - Improved the in-house distributed build pipeline for CI/CD using AWS EC2, Jenkins, Python, Groovy, and Docker

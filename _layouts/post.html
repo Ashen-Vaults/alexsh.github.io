@@ -110,6 +110,9 @@ layout: page
     {% if page.engine %}
     <p><strong>Engine:</strong> {{ page.engine }}</p>
     {% endif %}
+    {% if page.duration %}
+        <p><strong>Duration:</strong> {{page.duration}} </p>
+    {% endif %}
     {% if page.studio %}
         {% assign studio_key = page.studio | downcase | replace: " ", "_" %}
         {% assign studio_link = site.studio_links[studio_key] %}
@@ -122,7 +125,6 @@ layout: page
     {% if page.role %}
       <p><strong>Role:</strong> <a href="#my-roles" class="scroll-link">{{ page.role }}</a></p>
     {% endif %}
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.scroll-link').forEach(link => {

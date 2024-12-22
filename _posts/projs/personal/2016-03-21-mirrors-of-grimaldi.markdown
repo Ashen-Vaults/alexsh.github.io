@@ -25,6 +25,7 @@ studio: 51st and Fire
 engine: Unity
 platform_links:
   "itch": "https://51standfire.itch.io/mirrors-of-grimaldi"
+duration: 9 months
 ---
 
 **Mirrors of Grimaldi** is a four player split-screen game where your health is represented by the size of your screen. Players will be pitted against each other as Grimaldi's Interdimensional Demonic Carnival invades the same medieval town in parallel timelines. As swarms of demonic minions attack the players, their screens will shrink and eventually crush them, knocking them out of the game. The last surviving player is declared the winner and is allowed to fight another day.

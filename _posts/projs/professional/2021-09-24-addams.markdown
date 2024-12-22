@@ -27,7 +27,7 @@ platform_links:
   xbox: "https://www.xbox.com/en-us/games/store/the-addams-family-mansion-mayhem/9nk9lwx511gx?activetab=pivot:overviewtab"
   switch: "https://www.nintendo.com/us/store/products/the-addams-family-mansion-mayhem-switch/"
   steam: "https://store.steampowered.com/app/1543830/The_Addams_Family_Mansion_Mayhem/"
-
+duration: ~1 year
 ---
 They're creepy and kooky, and their home is in danger! Only you and your friends can help Wednesday, Pugsley, Gomez, and Morticia save the **Addams Family** Mansion in this horrifyingly hilarious 3D adventure for up to four players. The mansion is full of spooky scares - but can you discover its hair-raising secrets and save it from an unexpected threat? Use each iconic character's abilities to explore the house, solve puzzles, and find lost relics. Play competitive minigames that will have you bumping and jumping over each other to win. Family game night is about to get terrifyingly exciting!
 
