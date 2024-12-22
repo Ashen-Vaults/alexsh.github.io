@@ -265,4 +265,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+    document.querySelector('.nav-area-wrapper')
+      .addEventListener('click', function() {
+        this.classList.toggle('clicked');
+      });
+  }
 </script>
