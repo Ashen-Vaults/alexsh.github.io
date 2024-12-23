@@ -9,103 +9,6 @@ layout: page
 
 <h1 class="title">{{ page.title }}</h1>
 
-<style>
-    .header-post .title {
-        margin-bottom: 1px;
-    }
-    .post-details p {
-        margin-bottom: 1px;
-    }
-    .nav-area {
-        position: fixed;
-        top: 50%;
-        bottom: 50%;
-        width: 2px;
-        z-index: 1000;
-        background: rgba(255, 121, 198, 1);
-        transition: width 0.3s ease-in-out, background-color 0.3s;
-        animation: grow-vertical 1s forwards;
-    }
-    .nav-area-wrapper {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 60px;
-        z-index: 999;
-        cursor: pointer;
-    }
-    .nav-area-wrapper.disable-hover .nav-area {
-        pointer-events: none;
-    }
-    .nav-area-wrapper.enable-hover:hover .nav-area {
-        width: 55px;
-        background-color: rgba(80, 250, 123);
-    }
-    .nav-area-wrapper.nav-left {
-        left: 0;
-    }
-    .nav-area.nav-left {
-        left: 0;
-    }
-    .nav-left::after {
-        content: "<";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 45px;
-        color: #1E1E1E;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out 0s;
-    }
-    .nav-area-wrapper.nav-left.enable-hover:hover .nav-left::after {
-        opacity: 1;
-    }
-    .nav-area-wrapper.nav-right {
-        right: 0;
-    }
-    .nav-area.nav-right {
-        right: 0;
-    }
-    .nav-right::after {
-        content: ">";
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        font-size: 45px;
-        color: #1E1E1E;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out 0s;
-    }
-    .nav-area-wrapper.nav-right.enable-hover:hover .nav-right::after {
-        opacity: 1;
-    }
-    @keyframes grow-vertical {
-        0% {
-            top: 50%;
-            bottom: 50%;
-        }
-        100% {
-            top: 0;
-            bottom: 0;
-        }
-    }
-
-    @media (max-width: 768px) {
-      .nav-area-wrapper.enable-hover:hover .nav-area {
-        width: auto;
-        background-color: transparent;
-      }
-    
-
-    .nav-area-wrapper.clicked .nav-area {
-      width: 25px;
-      background-color: rgba(80, 250, 123, 1);
-    }
-}
-</style>
-
 <section class="post-details">
     {% if page.engine %}
     <p><strong>Engine:</strong> {{ page.engine }}</p>
@@ -154,7 +57,7 @@ layout: page
 {% if site.show-tags %}
     <div class="post-tags">
         {% for tag in page.tags %}
-            <a class="item" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+            <a class="item {{ tag | slugify }}" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
         {% endfor %}
     </div>
 {% endif %}

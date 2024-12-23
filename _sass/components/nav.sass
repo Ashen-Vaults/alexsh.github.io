@@ -69,3 +69,101 @@ $nav-padding: 0 0
                         color: $nav-hover-color
                         background-color: $background-color
                         transition: border-radius 5px ease-in-out
+
+.header-post
+    .title
+        margin-bottom: 1px
+
+.post-details
+    p
+        margin-bottom: 1px
+
+.nav-area
+    position: fixed
+    top: 50%
+    bottom: 50%
+    width: 2px
+    z-index: 1000
+    background: $delta
+    transition: width 0.3s ease-in-out, background-color 0.3s
+    animation: grow-vertical 1s forwards
+
+.nav-area-wrapper
+    position: fixed
+    top: 0
+    bottom: 0
+    width: 60px
+    z-index: 999
+    cursor: pointer
+
+    &.disable-hover
+        .nav-area
+            pointer-events: none
+
+    &.enable-hover:hover
+        .nav-area
+            width: 55px
+            background-color: $gama
+
+    &.nav-left
+        left: 0
+
+    &.nav-left.enable-hover:hover
+        .nav-left::after
+            opacity: 1
+
+    &.nav-right
+        right: 0
+
+    &.nav-right.enable-hover:hover
+        .nav-right::after
+            opacity: 1
+
+.nav-area
+    &.nav-left
+        left: 0
+
+    &.nav-right
+        right: 0
+
+.nav-left::after
+    content: "<"
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 45px
+    color: #1E1E1E
+    opacity: 0
+    transition: opacity 0.5s ease-in-out 0s
+
+.nav-right::after
+    content: ">"
+    position: absolute
+    top: 50%
+    right: 50%
+    transform: translate(50%, -50%)
+    font-size: 45px
+    color: #1E1E1E
+    opacity: 0
+    transition: opacity 0.5s ease-in-out 0s
+
+
+@keyframes grow-vertical
+    0%
+        top: 50%
+        bottom: 50%
+    100%
+        top: 0
+        bottom: 0
+
+@media (max-width: 768px)
+    .nav-area-wrapper.enable-hover:hover
+        .nav-area
+            width: auto
+            background-color: transparent
+
+    .nav-area-wrapper.clicked
+        .nav-area
+            width: 25px
+            background-color: $gama

@@ -20,10 +20,10 @@
             top: -5px
             left: 50%
             margin-left: -5px
-            background:  $dracula-current-line
+            background: $dracula-current-line
             border-radius: 3px
 
-.tags > .list
+.tags > .list, .post-tags
     > .item
         display: inline-block
         margin: 0 5px 5px 0
@@ -31,49 +31,80 @@
         border-radius: 3px
         font-size: 1rem
         text-transform: uppercase
-        background: $dracula-foreground
-        color: $dracula-current-line
+        background: $dracula-purple
+        color: #1E1E1E
 
-        &.unity3d
-            background: $dracula-foreground
-            color: $dracula-purple
+        // Tools (Languages, Engines, etc.)
+        &.c
+            background: $dracula-green
+            color: #1E1E1E
 
-        &.phl-collective
-            background: $dracula-foreground
-            color: $dracula-green
+        &.cpp
+            background: $dracula-green
+            color: #1E1E1E
 
         &.c-sharp
-            background: $dracula-foreground
-            color: $dracula-pink
+            background: $dracula-green
+            color: #1E1E1E
 
-        &.games
-            background: $dracula-foreground
-            color: $dracula-orange
+        &.unity
+            background: $dracula-green
+            color: #1E1E1E
 
-        &.horror
-            background: $dracula-foreground
-            color: $dracula-red
+        // Studios and Events
+        &.phl-collective
+            background: $dracula-pink
+            color: #1E1E1E
 
-        &.mobile
-            background: $dracula-foreground
-            color: $dracula-cyan
-
-        &.sproj
-            background: $dracula-foreground
-            color: $dracula-yellow
-
-        &.ai
-            background: $dracula-foreground
-            color: $dracula-comment
+        &.aspyr
+            background: $dracula-cyan
+            color: #1E1E1E
 
         &.gdc
-            background: $dracula-foreground
-            color: $dracula-background
+            background: $dracula-orange
+            color: #1E1E1E
 
-        // Default color for unspecified tags
-        &:not(.unity3d):not(.phl-collective):not(.c-sharp):not(.games):not(.horror):not(.mobile):not(.sproj):not(.ai):not(.gdc)
-            background: $dracula-foreground
-            color: $dracula-current-line
+        // Genres
+        &.fps
+            background: $dracula-red
+            color: #1E1E1E
+
+        &.horror
+            background: $dracula-red
+            color: #1E1E1E
+
+        &.vr
+            background: $dracula-red
+            color: #1E1E1E
+
+        &.open-world
+            background: $dracula-red
+            color: #1E1E1E
+
+        &.rpg
+            background: $dracula-red
+            color: #1E1E1E
+
+        &.physics-sandbox
+            background: $dracula-red
+            color: #1E1E1E
+
+        // Miscellaneous
+        &.ben10
+            background: $dracula-purple
+            color: #1E1E1E
+
+        &.mobile
+            background: $dracula-purple
+            color: #1E1E1E
+
+        &.multiplayer
+            background: $dracula-purple
+            color: #1E1E1E
+
+        &.justice-league
+            background: $dracula-purple
+            color: #1E1E1E
 
 .tag-list > .list
     padding: 0
@@ -116,54 +147,3 @@
 
     .item:hover .url aside
         color: $alpha
-
-.post-tags .item
-    display: inline-block
-    margin: 0 5px 5px 0
-    padding: 5px 10px
-    border-radius: 3px
-    font-size: 1rem
-    text-transform: uppercase
-    background: $dracula-current-line
-    color: $dracula-foreground
-
-    &.unity3d
-        background: $dracula-purple
-        color: $dracula-foreground
-
-    &.phl-collective
-        background: $dracula-green
-        color: $dracula-foreground
-
-    &.c-sharp
-        background: $dracula-pink
-        color: $dracula-foreground
-
-    &.games
-        background: $dracula-orange
-        color: $dracula-foreground
-
-    &.horror
-        background: $dracula-red
-        color: $dracula-foreground
-
-    &.mobile
-        background: $dracula-cyan
-        color: $dracula-foreground
-
-    &.sproj
-        background: $dracula-yellow
-        color: $dracula-foreground
-
-    &.ai
-        background: $dracula-comment
-        color: $dracula-foreground
-
-    &.gdc
-        background: $dracula-background
-        color: $dracula-foreground
-
-    // Default color for unspecified tags
-    &:not(.unity3d):not(.phl-collective):not(.c-sharp):not(.games):not(.horror):not(.mobile):not(.sproj):not(.ai):not(.gdc)
-        background: $dracula-current-line
-        color: $dracula-foreground
