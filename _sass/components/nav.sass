@@ -108,16 +108,8 @@ $nav-padding: 0 0
     &.nav-left
         left: 0
 
-    &.nav-left.enable-hover:hover
-        .nav-left::after
-            opacity: 1
-
     &.nav-right
         right: 0
-
-    &.nav-right.enable-hover:hover
-        .nav-right::after
-            opacity: 1
 
 .nav-area
     &.nav-left
@@ -125,29 +117,6 @@ $nav-padding: 0 0
 
     &.nav-right
         right: 0
-
-.nav-left::after
-    content: "<"
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    font-size: 45px
-    color: #1E1E1E
-    opacity: 0
-    transition: opacity 0.5s ease-in-out 0s
-
-.nav-right::after
-    content: ">"
-    position: absolute
-    top: 50%
-    right: 50%
-    transform: translate(50%, -50%)
-    font-size: 45px
-    color: #1E1E1E
-    opacity: 0
-    transition: opacity 0.5s ease-in-out 0s
-
 
 @keyframes grow-vertical
     0%
