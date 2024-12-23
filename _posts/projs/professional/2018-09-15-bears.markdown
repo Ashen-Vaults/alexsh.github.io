@@ -4,9 +4,9 @@ layout: post
 date: 2018-09-15 06:55
 tag: 
 - unity
-- phl collective
 - c#
 - vr
+- phl collective
 
 image: /assets/images/projs/bears/bears_cover.webp
 logo: /assets/images/projs/bears/bears_logo.webp

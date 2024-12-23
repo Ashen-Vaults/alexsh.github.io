@@ -4,13 +4,13 @@ layout: post
 date: 2023-10-09 06:55
 tag: 
 - unity
-- phl collective
 - c#
 - rpg
+- open world
 - justice league
 - multiplayer
-- open world
 - consoles
+- phl collective
 image: /assets/images/projs/cosmic/cosmic_cover.webp
 logo: /assets/images/projs/cosmic/cosmic_logo.webp
 headerImage: false

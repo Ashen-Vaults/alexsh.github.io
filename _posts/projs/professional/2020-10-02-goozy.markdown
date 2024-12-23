@@ -4,11 +4,11 @@ layout: post
 date: 2020-10-02 06:55
 tag: 
 - unity
-- phl collective
 - c#
-- horror
 - mobile
+- horror
 - fps
+- phl collective
 image: /assets/images/projs/goozy/goozy_cover.webp
 logo: /assets/images/projs/goozy/goozy_logo.webp
 headerImage: false
