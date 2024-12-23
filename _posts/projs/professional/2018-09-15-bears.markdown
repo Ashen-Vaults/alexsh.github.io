@@ -3,10 +3,9 @@ title: "We Bare Bears: Food Truck Rush"
 layout: post
 date: 2018-09-15 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
 - vr
 
 image: /assets/images/projs/bears/bears_cover.webp

@@ -3,11 +3,11 @@ title: "Ben 10: Omni-Charged"
 layout: post
 date: 2020-01-08 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
 - vr
+- ben10
 image: /assets/images/projs/ben10_omni/ben10_omni_cover.webp
 logo: /assets/images/projs/ben10_omni/ben10_omni_logo.webp
 headerImage: false

@@ -3,11 +3,14 @@ title: "DC’s Justice League: Cosmic Chaos"
 layout: post
 date: 2023-10-09 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
-- Open World Action RPG
+- rpg
+- justice league
+- multiplayer
+- open world
+- consoles
 image: /assets/images/projs/cosmic/cosmic_cover.webp
 logo: /assets/images/projs/cosmic/cosmic_logo.webp
 headerImage: false

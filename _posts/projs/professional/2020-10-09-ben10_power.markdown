@@ -3,11 +3,12 @@ title: "Ben 10: Power Trip"
 layout: post
 date: 2020-10-09 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
-- Open-World Adventure
+- open world
+- ben10
+- consoles
 image: /assets/images/projs/ben10_power/ben10_power_cover.webp
 logo: /assets/images/projs/ben10_power/ben10_power_logo.webp
 headerImage: false

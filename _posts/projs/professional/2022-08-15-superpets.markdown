@@ -3,11 +3,12 @@ title: "DC League of Super-Pets: The Adventures of Krypto and Ace"
 layout: post
 date: 2022-08-15 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
-- Rail Shooter
+- justice league
+- multiplayer
+- consoles
 image: /assets/images/projs/superpets/superpets_cover.webp
 logo: /assets/images/projs/superpets/superpets_logo.webp
 headerImage: false

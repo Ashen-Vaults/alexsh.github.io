@@ -20,26 +20,60 @@
             top: -5px
             left: 50%
             margin-left: -5px
-            background: #FFF
+            background:  $dracula-current-line
             border-radius: 3px
 
 .tags > .list
     > .item
-        font-weight: 300
-        text-transform: uppercase
-        text-align: center
-        margin-bottom: 2rem
-        -webkit-font-smoothing: antialiased
-        text-rendering: optimizeLegibility
-        padding: 3px 9px
-        border-radius: 3px
-        font-size: 1.3rem
-        background: $epsilon
-        color: $alpha
-        letter-spacing: 1px
-        margin: 0 0.5rem 1rem
-        text-decoration: none
         display: inline-block
+        margin: 0 5px 5px 0
+        padding: 5px 10px
+        border-radius: 3px
+        font-size: 1rem
+        text-transform: uppercase
+        background: $dracula-foreground
+        color: $dracula-current-line
+
+        &.unity3d
+            background: $dracula-foreground
+            color: $dracula-purple
+
+        &.phl-collective
+            background: $dracula-foreground
+            color: $dracula-green
+
+        &.c-sharp
+            background: $dracula-foreground
+            color: $dracula-pink
+
+        &.games
+            background: $dracula-foreground
+            color: $dracula-orange
+
+        &.horror
+            background: $dracula-foreground
+            color: $dracula-red
+
+        &.mobile
+            background: $dracula-foreground
+            color: $dracula-cyan
+
+        &.sproj
+            background: $dracula-foreground
+            color: $dracula-yellow
+
+        &.ai
+            background: $dracula-foreground
+            color: $dracula-comment
+
+        &.gdc
+            background: $dracula-foreground
+            color: $dracula-background
+
+        // Default color for unspecified tags
+        &:not(.unity3d):not(.phl-collective):not(.c-sharp):not(.games):not(.horror):not(.mobile):not(.sproj):not(.ai):not(.gdc)
+            background: $dracula-foreground
+            color: $dracula-current-line
 
 .tag-list > .list
     padding: 0
@@ -82,3 +116,54 @@
 
     .item:hover .url aside
         color: $alpha
+
+.post-tags .item
+    display: inline-block
+    margin: 0 5px 5px 0
+    padding: 5px 10px
+    border-radius: 3px
+    font-size: 1rem
+    text-transform: uppercase
+    background: $dracula-current-line
+    color: $dracula-foreground
+
+    &.unity3d
+        background: $dracula-purple
+        color: $dracula-foreground
+
+    &.phl-collective
+        background: $dracula-green
+        color: $dracula-foreground
+
+    &.c-sharp
+        background: $dracula-pink
+        color: $dracula-foreground
+
+    &.games
+        background: $dracula-orange
+        color: $dracula-foreground
+
+    &.horror
+        background: $dracula-red
+        color: $dracula-foreground
+
+    &.mobile
+        background: $dracula-cyan
+        color: $dracula-foreground
+
+    &.sproj
+        background: $dracula-yellow
+        color: $dracula-foreground
+
+    &.ai
+        background: $dracula-comment
+        color: $dracula-foreground
+
+    &.gdc
+        background: $dracula-background
+        color: $dracula-foreground
+
+    // Default color for unspecified tags
+    &:not(.unity3d):not(.phl-collective):not(.c-sharp):not(.games):not(.horror):not(.mobile):not(.sproj):not(.ai):not(.gdc)
+        background: $dracula-current-line
+        color: $dracula-foreground

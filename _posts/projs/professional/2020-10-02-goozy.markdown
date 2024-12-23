@@ -3,12 +3,12 @@ title: "FGTeeV Presents Goozy"
 layout: post
 date: 2020-10-02 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
 - horror
 - mobile
+- fps
 image: /assets/images/projs/goozy/goozy_cover.webp
 logo: /assets/images/projs/goozy/goozy_logo.webp
 headerImage: false

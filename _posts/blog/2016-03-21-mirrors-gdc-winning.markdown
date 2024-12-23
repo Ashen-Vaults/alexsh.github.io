@@ -6,7 +6,7 @@ image: /assets/images/mog/MogLogoFull.webp
 logo: /assets/images/mog/MogLogoFull.webp
 headerImage: false
 tag:
-- unity3d
+- unity
 - gdc
 star: true
 category: blog

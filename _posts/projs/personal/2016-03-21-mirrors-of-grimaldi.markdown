@@ -5,11 +5,9 @@ categories: personal
 projects: true
 date: 2016-05-23 04:55
 tag: 
-- unity3d
-- sproj
+- unity
 - c#
 - ai
-- games
 - gdc
 image: /assets/images/mog/mog_concept.webp
 logo: /assets/images/mog/MogLogoFull.webp

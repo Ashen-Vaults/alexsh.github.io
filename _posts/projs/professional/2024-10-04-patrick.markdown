@@ -3,11 +3,12 @@ title: "SpongeBob SquarePants™: The Patrick Star Game"
 layout: post
 date: 2024-10-04 06:55
 tag: 
-- unity3d
+- unity
 - phl collective
 - c#
-- games
-- Physics Sandbox
+- physics sandbox
+- open world
+- consoles
 image: /assets/images/projs/patrick/patrick_cover.webp
 logo: /assets/images/projs/patrick/patrick_logo.webp
 headerImage: false
