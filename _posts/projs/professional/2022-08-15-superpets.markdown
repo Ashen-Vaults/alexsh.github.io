@@ -39,5 +39,5 @@ Suit up as super-dogs **Krypto and Ace** to uncover Lex Luthor’s plot to pet-n
 - Managed a team of 2 programmers
 - Significantly sped up load times by converting the project to use addressables
 - Improved the in-house C# platform library that I wrote for previous projects, which handles platform features such as saving, achievements, game suspension, user management, input, and audio integration with FMOD, in addition to ensuring the game ran on all platforms
-- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
+- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements (XR's, Lotcheck, and TRC's)
 - Handled all patches, including gameplay fixes, post-release

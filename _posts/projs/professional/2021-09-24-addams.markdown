@@ -38,5 +38,5 @@ They're creepy and kooky, and their home is in danger! Only you and your friends
 
 - Managed a team of 2 programmers
 - Developed a reusable, cross-platform C# library for Unity, handling saving, achievements, game suspension, user management, input, audio integration with FMOD, and platform specific features
-- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements
+- Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements (XR's, Lotcheck, and TRC's)
 - Implemented custom audio events using C# and FMOD
