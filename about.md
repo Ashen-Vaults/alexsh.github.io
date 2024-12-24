@@ -3,18 +3,6 @@ title: About
 layout: page
 ---
 
-<script src="{{ site.baseurl }}/scripts/platform_table.js"></script>
-
-<link rel="preload" href="/assets/images/platform_icons/steam-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/ps-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/xbox-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/switch-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/ios-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/android-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/htc-vive-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/oculus-rift-icon.webp" as="image">
-<link rel="preload" href="/assets/images/platform_icons/itch-icon.webp" as="image">
-
 Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
 
 I’ve worn many hats as a software engineer, embracing diverse aspects of game development to move a project forward. Whether it's rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I thrive on solving complex technical problems.
