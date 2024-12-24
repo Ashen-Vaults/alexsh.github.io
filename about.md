@@ -7,7 +7,7 @@ Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://w
 
 I’ve worn many hats as a software engineer, embracing diverse aspects of game development to move a project forward. Whether it's rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I thrive on solving complex technical problems.
 
-Throughout my career, I’ve collaborated closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship {% assign professional_projects = site.posts | where: "categories", "professional" | size %}{{ professional_projects }} titles across multiple platforms. Each project presented unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a key role in their successful launches.
+Throughout my career, I’ve collaborated closely with artists, designers, producers, writers, audio engineers, and fellow programmers to ship [{% assign professional_projects = site.posts | where: "categories", "professional" | size %}{{ professional_projects }} titles across multiple platforms](https://alexsh.me/projects/). Each project presented unique challenges—some straightforward, others complex—and through teamwork and dedication, I’m proud to have played a key role in their successful launches.
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by crafting engaging experiences, overcoming technical challenges, and collaborating with talented teams to create fun, memorable games.
 
