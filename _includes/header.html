@@ -22,7 +22,11 @@
         {% endif %}
         <br>
         <h4 class="subtitle">
-            Programmer in the video game industry with a proven track record of collaborating with designers, artists, and engineers to ship {% assign professional_projects = site.posts | where: "categories", "professional" | size %}{{ professional_projects }} successful titles
+            Programmer in the video game industry with a proven track record of collaborating with designers, artists, and engineers to ship 
+            <a href="{{ site.url }}/projects">
+                {% assign professional_projects = site.posts | where: "categories", "professional" | size %}
+                {{ professional_projects }} successful titles
+            </a>
         </h4>
     </header>
 {% endif %}
