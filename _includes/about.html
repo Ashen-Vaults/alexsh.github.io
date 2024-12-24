@@ -1,0 +1,77 @@
+<br>
+<button id="toggle-section-btn" onclick="toggleSection()">
+    <span id="toggle-icon">▼</span> Portfolio Breakdown
+</button>
+
+<div id="collapsible-section" class="hidden">
+  <style>
+    .platform-icon-link img {
+      transition: filter 0.3s;
+    }
+    .platform-icon-link:hover img {
+      /* Disabling apparently violates xbox logo law */
+      /* filter: brightness(1.5) contrast(1.1);
+      transform: scale(1.1); */
+    }
+  </style>
+
+  <h2>Professional</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Role</th>
+        <th>Platforms</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      {% for post in sorted_posts %}
+      {% if post.projects and post.categories contains "professional" %}
+      <tr>
+        <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
+        <td>{{ post.role }}</td>
+        <td>
+          <div id="platform-icons-{{ forloop.index0 }}"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-{{ forloop.index0 }}");
+            });
+          </script>
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  
+  <h2>Personal</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Role</th>
+        <th>Platforms</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in sorted_posts %}
+      {% if post.projects and post.categories contains "personal" %}
+      <tr>
+        <td><a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a></td>
+        <td>{{ post.role }}</td>
+        <td>
+          <div id="platform-icons-personal-{{ forloop.index0 }}"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              renderPlatformIcons("{{ post.platforms }}", {{ post.platform_links | jsonify }}, "platform-icons-personal-{{ forloop.index0 }}");
+            });
+          </script>
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

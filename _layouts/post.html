@@ -56,6 +56,9 @@ layout: page
             <p><strong>Studio:</strong> {{ page.studio }}</p>
         {% endif %}
     {% endif %}
+    {% if page.publisher %}
+      <p><strong>Publisher:</strong> {{ page.publisher }}</p>
+    {% endif %}
     {% if page.role %}
       <p><strong>Role:</strong> <a href="#my-roles" class="scroll-link">{{ page.role }}</a></p>
     {% endif %}

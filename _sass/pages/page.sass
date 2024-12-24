@@ -186,42 +186,39 @@ p
 
 .profile-image-wrapper
     position: relative
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
-    margin: 0 auto
-    margin-bottom: 10px
-
-.profile-image-wrapper img
     display: block
-    margin: 0 auto
-
-.profile-image-wrapper .tooltip
-    visibility: hidden
-    width: 100px
-    background-color: $go-top
-    color: $gama
     text-align: center
-    padding: 5px 5px
-    border-radius: 6px
-    position: absolute
-    z-index: 1
-    top: 50%
-    transform: translateY(-100%)
-    opacity: 0
-    transition: opacity 0.3s
 
-.profile-image-wrapper .tooltip::after
-    content: ''
-    position: absolute
-    top: 50%
-    left: 0
-    transform: translateY(-50%)
-    border-width: 5px
-    border-style: solid
-    border-color: transparent $go-top transparent transparent
+    img
+        display: inline-block
+        margin: 0 auto
 
-.profile-image-wrapper img:hover + .tooltip
-    visibility: visible
-    opacity: 1
+    .tooltip
+        visibility: hidden
+        width: 100px
+        background-color: $go-top
+        color: $gama
+        text-align: center
+        padding: 5px 5px
+        border-radius: 6px
+        position: absolute
+        z-index: 1
+        top: 50%
+        left: 25%
+        transform: translateX(50%) translateY(-50%)
+        opacity: 0
+        transition: opacity 0.3s
+
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: -5px
+            transform: translateY(-50%)
+            border-width: 5px
+            border-style: solid
+            border-color: transparent $go-top transparent transparent
+
+    img:hover + .tooltip
+        visibility: visible
+        opacity: 1
