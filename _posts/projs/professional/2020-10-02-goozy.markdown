@@ -28,6 +28,7 @@ platform_links:
   android: "https://goozygame.com/"
   steam: "https://goozygame.com/"
 duration: ~1 year
+publisher: BDT Digital
 ---
 Explore a house full of weird technology and slimy surprises as you attempt to save the FGTeeV family. Take control of the powerful Multitool to help on your adventure around the mysterious house of Dr. Jax. The Multitool is your ultimate weapon when it comes to solving the many puzzles that exist in the house. Keep your eyes open because something is always lurking around! What is that slimy creature? Where did it come from? Where is Dr. Jax? Step into the world of **Goozy** and prepare for an out-of-this-world adventure!
 

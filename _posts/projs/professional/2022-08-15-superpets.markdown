@@ -29,6 +29,7 @@ platform_links:
   switch: "https://www.nintendo.com/us/store/products/dc-league-of-super-pets-the-adventures-of-krypto-and-ace-switch/"
   steam: "https://store.steampowered.com/app/1697760/DC_League_of_SuperPets_The_Adventures_of_Krypto_and_Ace/"
 duration: ~1.5 years
+publisher: Outright Games
 ---
 Suit up as super-dogs **Krypto and Ace** to uncover Lex Luthor’s plot to pet-nap Metropolis’ strays. Soar through the skies, unleash your special abilities and protect the streets of Metropolis from Lex’s plans, and bring the evil LexBots to heel.
 

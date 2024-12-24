@@ -31,6 +31,7 @@ platform_links:
   switch: "https://www.nintendo.com/us/store/products/dcs-justice-league-cosmic-chaos-switch/"
   steam: "https://store.steampowered.com/app/1944850/DCs_Justice_League_Cosmic_Chaos/"
 duration: ~2 years
+publisher: Outright Games
 ---
 Unite against chaos in an all-new adventure where the **Justice League** goes head-to-head with Mr. Mxyzptlk, a powerful prankster from the 5th Dimension. Have the freedom to play your way in action-packed missions, grueling fights, and daring challenges! Suit up as Batman, Wonder Woman, and Superman and team up with other Super Heroes to take on some of the most powerful Super-Villains in the DC universe. Use the super abilities at your disposal to help solve puzzles, defeat enemies, and unlock outfits and special upgrades. Play with friends or family in 2-player couch co-op Instant Action Mode and have the freedom to explore Happy Harbor, the home of the Justice League. Can you stop Mr. Mxyzptlk's chaos and bring peace to Happy Harbor?
 

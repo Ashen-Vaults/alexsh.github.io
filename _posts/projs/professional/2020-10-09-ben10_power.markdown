@@ -29,6 +29,7 @@ platform_links:
   switch: "https://www.nintendo.com/us/store/products/ben-10-power-trip-switch/"
   steam: "https://store.steampowered.com/app/1063040/Ben_10_Power_Trip/"
 duration: ~2 years
+publisher: Outright Games
 ---
 Ben and his family are enjoying their European vacation... until evil magician Hex unleashes the power of four mysterious crystals! Only **Ben 10** can break the curse - so get ready to transform into powerful aliens to battle enemies, solve puzzles and freely explore an exciting 3D world. It's hero time! With Gwen and Grandpa Max on your side, all the humor and rivalry from the Cartoon Network show is here. And since four arms are better than two, Kevin Levin is along for the adventure in local split-screen co-op. This is one Power Trip you'll want to take again and again. It's hero time!
 
