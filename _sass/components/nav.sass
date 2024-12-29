@@ -82,17 +82,37 @@ $nav-padding: 0 0
     position: fixed
     top: 50%
     bottom: 50%
-    width: 2px
+    width: 10px
     z-index: 1000
     background: $delta
-    transition: width 0.3s ease-in-out, background-color 0.3s
+    transition: width 0.3s ease-in-out, background-color 0.3s, font-size 0.3s
     animation: grow-vertical 1s forwards
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 18px
+    color: $gama
+
+    &.nav-left::before
+        content: "«"
+        display: block
+        font-size: 18x
+        color: $background-color-lighter
+        transition: font-size 0.3s ease-in-out
+
+    &.nav-right::before
+        content: "»"
+        display: block
+        font-size: 18px
+        color: $background-color-lighter
+        transition: font-size 0.3s ease-in-out
 
 .nav-area-wrapper
     position: fixed
     top: 0
     bottom: 0
     width: 60px
+    font-size: 45px
     z-index: 999
     cursor: pointer
 
@@ -104,6 +124,11 @@ $nav-padding: 0 0
         .nav-area
             width: 55px
             background-color: $gama
+            font-size: 45px
+
+        .nav-left::before,
+        .nav-right::before
+            font-size: 45px
 
     &.nav-left
         left: 0

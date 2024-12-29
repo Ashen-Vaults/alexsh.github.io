@@ -9,37 +9,6 @@ layout: page
 
 <h1 class="title">{{ page.title }}</h1>
 
-<style>
-    .nav-left::after {
-        content: "<";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 45px;
-        color: #1E1E1E;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out 0s;
-    }
-    .nav-area-wrapper.nav-left.enable-hover:hover .nav-left::after {
-        opacity: 1;
-    }
-    .nav-right::after {
-        content: ">";
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        font-size: 45px;
-        color: #1E1E1E;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out 0s;
-    }
-    .nav-area-wrapper.nav-right.enable-hover:hover .nav-right::after {
-        opacity: 1;
-    }
-</style>
-
 <section class="post-details">
     {% if page.engine %}
     <p><strong>Engine:</strong> {{ page.engine }}</p>
