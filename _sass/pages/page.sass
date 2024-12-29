@@ -60,7 +60,7 @@ table
     width: 100%
     border-collapse: collapse
     border-spacing: 0
-    text-align: left
+    text-align: center
     margin-bottom: 10px 
     font-size: 1.3rem
     align-items: center
@@ -69,6 +69,10 @@ table
         padding: 5px
         border: none
         color: $alpha
+        text-align: center
+
+    th:first-child, td:first-child
+        text-align: left
 
     tr:first-child
         th
@@ -80,6 +84,7 @@ table
     th
         font-weight: italic
         color: $gama
+        text-align: center
 
     td:first-child
         color: $alpha
@@ -95,6 +100,19 @@ table
         display: block
         overflow-x: auto
         white-space: nowrap 
+
+        th:nth-child(1), td:nth-child(1)
+            width: 40%
+
+        th:nth-child(2), td:nth-child(2)
+            width: 30%
+        
+        th:nth-child(3), td:nth-child(3)
+            width: 30%
+            align-items: center
+            text-align: center
+            a
+                transform: scale(1)
 
     th:nth-child(1), td:nth-child(1)
         width: 35%
