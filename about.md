@@ -11,7 +11,7 @@ Throughout my career, I’ve collaborated closely with artists, designers, produ
 
 As I continue to grow, I’m excited to bring my experience and passion to future projects by crafting engaging experiences, overcoming technical challenges, and collaborating with talented teams to create fun, memorable games.
 
-###### Interested in learning more? Expand the portfolio breakdown below or check out the full [Portfolio](/projects/).
+###### Interested in learning more? Expand the portfolio overview below or check out the full [Portfolio](/projects/).
 
 {% include about.html %}
 
