@@ -70,9 +70,7 @@ table
         border: none
         color: $alpha
         text-align: center
-
-    th:first-child, td:first-child
-        text-align: left
+        align-items: center
 
     tr:first-child
         th
@@ -98,8 +96,6 @@ table
 
     @media #{$mobile}
         display: block
-        overflow-x: auto
-        white-space: nowrap 
 
         th:nth-child(1), td:nth-child(1)
             width: 40%
@@ -122,11 +118,9 @@ table
         
     th:nth-child(3), td:nth-child(3)
         width: 20%
-        align-items: center
-        text-align: center
         a
             transform: scale(1)
-
+    
     td:has(a)
         color: $delta !important
         a
@@ -150,6 +144,8 @@ table
     border-radius: 8px
     font-size: 16px
     font-weight: bold
+    text-align: center
+    
     cursor: pointer
     transition: all 0.3s ease-in-out
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
