@@ -42,5 +42,5 @@ publisher: Outright Games
 - Managed a team of 2 programmers
 - Improved the in-house C# platform library that handles saving, achievements, game suspension, user management, input, audio integration with FMOD, and platform specific features, ensuring the game ran on all platforms
 - Collaborated with QA, producers, and fellow programmers to meet each platform’s unique technical requirements (XR's, Lotcheck, and TRC's)
-- Fixed high priority bugs and created patches for post-release
-- Improved the in-house distributed build pipeline for CI/CD using AWS EC2, Jenkins, Python, Groovy, and Docker
+- Fixed high priority Jira bugs and created patches for post-release
+- Added new features and fixed issues in the in-house distributed build pipeline for CI/CD, based on user feedback, using AWS EC2, Jenkins, Python, Groovy, and Docker
