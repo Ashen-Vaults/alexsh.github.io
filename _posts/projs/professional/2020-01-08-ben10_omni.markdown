@@ -35,8 +35,7 @@ publisher: Cartoon Network
 <section id="my-roles"></section>
 **My Roles as {{ page.role }}**:
 
-- Developed and implemented player attack systems
-- Designed and programmed enemy attacks
+- Developed and implemented attacks for players and enemies
 - Integrated audio using FMOD
-- Set up inverse kinematics for player avatars
-- Created context-responsive avatar facial animations
+- Added dynamic player avatar animations using inverse kinematics
+- Created context responsive avatar facial animations
