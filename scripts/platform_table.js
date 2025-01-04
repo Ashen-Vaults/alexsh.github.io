@@ -8,7 +8,7 @@ function getPlatformIcon(platform) {
       "android": "/assets/images/platform_icons/android-icon.webp",
       "htc vive": "/assets/images/platform_icons/htc-vive-icon.webp",
       "oculus rift": "/assets/images/platform_icons/oculus-rift-icon.webp",
-      "itch": "/assets/images/platform_icons/itch-icon.webp"
+      "itch": "/assets/images/platform_icons/itch-icon.webp",
     };
     return platformIcons[platform] || null;
   }
