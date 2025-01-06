@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 <br>
-Hi, I’m **Alex**, a passionate software engineer at [PHL Collective](https://www.phlcollective.com/). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
+Hi, I’m **Alex**, a passionate software engineer at [{{ site.currentCompany }}]({{ site.currentCompanyUrl}} ). I’ve been professionally working in the video game industry since 2016, specializing in cross-platform development, build pipeline automation, and performance optimization. I’m always eager to tackle new challenges that contribute to a project’s success.
 
 I’ve worn many hats as a software engineer, embracing diverse aspects of game development to move a project forward. Whether it's rendering in C++ with low-level APIs like DirectX 12, NVN, Agc, or Gnm, automating build pipelines with Jenkins using Groovy and Python, or implementing core game mechanics, I thrive on solving complex technical problems.
 
