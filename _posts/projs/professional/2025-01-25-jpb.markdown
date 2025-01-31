@@ -1,0 +1,54 @@
+---
+title: "STAR WARS™: Episode I: Jedi Power Battles™"
+layout: post
+date: 2024-11-23 06:55
+tag: 
+- c
+- c++
+- consoles
+- multiplayer
+- aspyr
+image: /assets/images/projs/jpb/jpb_cover.webp
+logo: /assets/images/projs/jpb/jpb_logo.webp
+headerImage: false
+projects: true
+hidden: false # don't count this post in blog pagination
+description: Deflect. Defeat. Destroy!
+category: project
+author: alexsh
+externalLink: false
+platforms: PS4, PS5, Xbox One, Xbox Series X, Switch, Steam, gog
+role: Programming Director
+categories: professional
+studio: Aspyr
+engine: Custom
+platform_links:
+  ps: "https://store.playstation.com/en-us/concept/10008489"
+  xbox: "https://www.xbox.com/en-US/games/store/star-wars-episode-i-jedi-power-battles/9p40xp05761g"
+  switch: "https://www.nintendo.com/us/store/products/star-wars-episode-i-jedi-power-battles-switch/"
+  steam: "https://store.steampowered.com/app/2443630/STAR_WARS_Episode_I_Jedi_Power_Battles/"
+  gog: "https://www.gog.com/en/game/star_wars_episode_i_jedi_power_battles"
+
+duration: ~1.5 years
+publisher: Aspyr
+
+
+---
+
+Take back the Theed Palace in this fast and furious lightsaber action game. You will have the power of the Force and your trusty lightsaber to help you ward off legions of battle droids, destroyer droids, assassins, and other creatures from **Star Wars**: The Phantom Menace.
+
+**\*KEY FEATURES\***
+
+Jump into Side-Scrolling Arcade Action in the Star Wars Galaxy
+Play as Mace Windu, Obi-Wan Kenobi, Plo Koon, Adi Gallia, or Qui-Gon Jinn facing off against droids and other familiar foes from Star Wars: The Phantom Menace.
+
+Or, play as one of the previously locked characters such as Darth Maul, Captain Panaka, Queen Amidala, Ki-Adi Mundi, and the Battle Droid, now available from the start!
+
+Bring a Friend in Classic Couch Co-op
+Battle side-by-side with a companion in 2-player couch co-op for the entire 10-level campaign and bonus mini-games.
+
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/ZsS1FvaH3js" title="STAR WARS™: Episode I: Jedi Power Battles™ - Announce Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<section id="my-roles"></section>
+**My Roles as {{ page.role }}**:
