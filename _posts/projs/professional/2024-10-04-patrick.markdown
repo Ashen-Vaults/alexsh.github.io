@@ -28,7 +28,7 @@ platform_links:
   xbox: "https://www.xbox.com/en-us/games/store/spongebob-squarepants-the-patrick-star-game/9nmf3kxt4p4g"
   switch: "https://www.nintendo.com/us/store/products/spongebob-squarepants-the-patrick-star-game-switch/"
   steam: "https://store.steampowered.com/app/2322380/SpongeBob_SquarePants_The_Patrick_Star_Game/"
-duration: ~2 years
+duration: ~1.5 years
 publisher: Outright Games
 ---
 **Patrick** fans, your time has come – and Bikini Bottom is your open-world playground! You can skydive with just a parasol (or nothing at all), search for buried treasure in the Dump, or release the rage in Mrs. Puff’s Rage Room. Use almost any item you find, - from the reef blower to a paint can, - to make the world more Patrick. And take on challenges only Patrick would attempt, set by up SpongeBob, Sandy Cheeks, Mr. Krabs, and more. So become the Star of the show, put your silliest ideas into action, and enjoy the physics-based chaos that unfolds all around you!
